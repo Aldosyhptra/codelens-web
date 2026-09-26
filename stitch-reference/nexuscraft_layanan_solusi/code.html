@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Layanan &amp; Solusi Rekayasa Perangkat Lunak - NexusCraft</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            surface: '#ffffff',
+            slateBg: '#f8fafc',
+            subtleBorder: '#e2e8f0',
+            primaryText: '#0f172a',
+            mutedText: '#475569',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-slate-900 antialiased min-h-screen selection:bg-brand-100 selection:text-brand-900">
+<!-- Header / Navigation Chrome -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+<!-- Brand Logo -->
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-2.5 group" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcN_fjrQYtm5SDnsNGZqIeOKWZWPPOqYas3Dnw6CDHDhMAVvHBrb0s6oelrrkmVvRce74vbGJ-f8b65hU3K0TGDbfuy1wDpOhUgoC_85Hh2wZvhmLbI1zc-kvjkenHAacPv1m7AM52EgoRhtSPyCtSL2373MAzuByQq8J4UnnTHRuNK2zKfuysiCABBf9Nx8VdjVweUtOdVp3JrD_JsbLjzs2bA2m9JREOYStY7_7dacsz9DsoF6u68ma2yP-A98nUFcw" alt="CodeLens" class="h-9 w-auto object-contain"></a>
+</div>
+<!-- Navigation Links (Bahasa Indonesia) -->
+<nav class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors" href="#">Beranda</a>
+<a class="px-4 py-2 rounded-lg text-sm font-semibold text-brand-700 bg-brand-50 transition-colors" href="#">Layanan &amp; Solusi</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors" href="#">Studi Kasus</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors" href="#">Tentang Kami</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 transition-colors" href="#">Hubungi Kami</a>
+</nav>
+<!-- CTA -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow-md shadow-brand-600/20 hover:shadow-lg hover:shadow-brand-600/30 transition-all gap-2" href="#kontak">
+<span class="">Konsultasi Gratis</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="w-full pt-20">
+<!-- HERO SECTION: Clean, Light, Spacious -->
+<section class="relative pt-16 pb-20 md:pt-24 md:pb-28 bg-gradient-to-b from-slate-50/80 via-white to-white overflow-hidden">
+<!-- Ambient subtle glow elements -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-brand-100/40 blur-3xl rounded-full pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-8 text-center flex flex-col items-center">
+<!-- Pill Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-200/60 text-brand-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+          Mitra Teknologi Terpercaya &amp; Andal
+        </div>
+<!-- Main Headline -->
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
+          Layanan &amp; Solusi <span class="text-brand-600">Rekayasa Perangkat Lunak</span>
+</h1>
+<!-- Subtitle -->
+<p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl leading-relaxed">
+          Kami merancang, membangun, dan mengoptimalkan sistem digital yang andal, aman, dan mudah digunakan untuk pertumbuhan bisnis Anda.
+        </p>
+<!-- Highlights / Metric Strips -->
+<div class="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12">
+<div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow text-center">
+<div class="text-2xl lg:text-3xl font-extrabold text-brand-600 font-mono">99.9%</div>
+<div class="text-xs font-semibold text-slate-800 uppercase tracking-wider mt-1">Jaminan Uptime</div>
+<div class="text-xs text-slate-500 mt-0.5">Sistem stabil tanpa henti</div>
+</div>
+<div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow text-center">
+<div class="text-2xl lg:text-3xl font-extrabold text-brand-600 font-mono">&lt; 1 Detik</div>
+<div class="text-xs font-semibold text-slate-800 uppercase tracking-wider mt-1">Kecepatan Muat</div>
+<div class="text-xs text-slate-500 mt-0.5">Pengalaman pengguna gesit</div>
+</div>
+<div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow text-center">
+<div class="text-2xl lg:text-3xl font-extrabold text-brand-600 font-mono">100%</div>
+<div class="text-xs font-semibold text-slate-800 uppercase tracking-wider mt-1">Hak Milik Penuh</div>
+<div class="text-xs text-slate-500 mt-0.5">Kode &amp; aset milik Anda</div>
+</div>
+<div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow text-center">
+<div class="text-2xl lg:text-3xl font-extrabold text-brand-600 font-mono">24 / 7</div>
+<div class="text-xs font-semibold text-slate-800 uppercase tracking-wider mt-1">Dukungan Teknis</div>
+<div class="text-xs text-slate-500 mt-0.5">Pemantauan proaktif berkala</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: 4 CORE SERVICE AREAS (Bersih, Luas & Terstruktur) -->
+<section class="py-20 bg-slate-50 border-y border-slate-200/60" id="layanan">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Solusi Komprehensif</span>
+<h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-3">4 Layanan Utama NexusCraft</h2>
+<p class="text-slate-600 mt-3 text-base">
+            Dirancang khusus untuk membantu transformasi digital perusahaan dengan metode rekayasa modern yang teruji dan efisien.
+          </p>
+</div>
+<!-- 4 Core Service Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Layanan 1: Pengembangan Aplikasi Web & Mobile -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-200 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">devices</span>
+</div>
+<div class="inline-block text-xs font-semibold text-brand-600 tracking-wide uppercase mb-1">Modern, Responsif &amp; Cepat</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Pengembangan Aplikasi Web &amp; Mobile</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Membangun antarmuka modern yang nyaman dipakai oleh pelanggan maupun tim internal Anda. Desain responsif, performa cepat, dan bebas kendala teknis pada platform iOS, Android, maupun peramban web.
+              </p>
+<!-- Poin Keunggulan -->
+<div class="space-y-2.5 pt-4 border-t border-slate-100">
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Aplikasi Web interaktif berperforma tinggi (Next.js, React, Node.js)</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Aplikasi Mobile cross-platform mulus untuk Android &amp; iOS</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Pengalaman pengguna (UX/UI) yang intuitif dan mudah dipelajari</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
+<span class="text-xs font-medium text-slate-500">Standar Aksesibilitas WCAG &amp; SEO Friendly</span>
+<a class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1" href="#kontak">
+                Pelajari Detail <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Layanan 2: Transformasi Cloud & Modernisasi Sistem -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-200 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">cloud_sync</span>
+</div>
+<div class="inline-block text-xs font-semibold text-brand-600 tracking-wide uppercase mb-1">Efisien, Skalabel &amp; Hemat Biaya</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Transformasi Cloud &amp; Modernisasi Sistem</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Memperbarui infrastruktur dan aplikasi lama agar berjalan di ekosistem cloud modern. Mengurangi biaya operasional server bulanan dan mencegah server down saat lonjakan pengunjung.
+              </p>
+<!-- Poin Keunggulan -->
+<div class="space-y-2.5 pt-4 border-t border-slate-100">
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Migrasi aman ke AWS, Google Cloud, atau Microsoft Azure</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Otomasi alur kerja rilis cepat (CI/CD) tanpa gangguan operasional</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Optimasi kapasitas server otomatis sesuai kebutuhan beban kerja nyata</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
+<span class="text-xs font-medium text-slate-500">Efisiensi Biaya Server hingga 35-50%</span>
+<a class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1" href="#kontak">
+                Pelajari Detail <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Layanan 3: Solusi Kecerdasan Buatan & Otomasi Data -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-200 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</div>
+<div class="inline-block text-xs font-semibold text-brand-600 tracking-wide uppercase mb-1">Otomasi Proses &amp; AI Praktis</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Solusi Kecerdasan Buatan &amp; Otomasi Data</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Mengintegrasikan kecerdasan buatan (AI) yang aplikatif ke dalam operasional bisnis Anda. Mempercepat pemrosesan data rutin, asisten pintar berbasis dokumen internal, dan analisis prediktif.
+              </p>
+<!-- Poin Keunggulan -->
+<div class="space-y-2.5 pt-4 border-t border-slate-100">
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Chatbot &amp; asisten virtual internal berbasis data perusahaan yang privat</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Otomasi ekstraksi dokumen, faktur, serta laporan bisnis otomatis</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Dashboard wawasan data real-time untuk pengambilan keputusan pimpinan</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
+<span class="text-xs font-medium text-slate-500">Privasi Data Terenkripsi &amp; Nol Kebocoran</span>
+<a class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1" href="#kontak">
+                Pelajari Detail <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Layanan 4: Keamanan Sistem & Pemeliharaan 24/7 -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-200 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<div class="inline-block text-xs font-semibold text-brand-600 tracking-wide uppercase mb-1">Perlindungan Data &amp; Audit Berkala</div>
+<h3 class="text-xl font-bold text-slate-900 mb-3">Keamanan Sistem &amp; Pemeliharaan 24/7</h3>
+<p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Perlindungan menyeluruh terhadap ancaman siber dan kebocoran data. Tim kami memantau keandalan server setiap saat, melakukan update keamanan berkala, dan penanganan insiden cepat.
+              </p>
+<!-- Poin Keunggulan -->
+<div class="space-y-2.5 pt-4 border-t border-slate-100">
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Audit celah keamanan (Penetration Testing) dan kepatuhan data</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Pencadangan (Backup) data otomatis berkala dan pemulihan bencana cepat</span>
+</div>
+<div class="flex items-start gap-2.5 text-sm text-slate-700">
+<span class="material-symbols-outlined text-brand-600 text-lg shrink-0 mt-0.5">check_circle</span>
+<span class="">Pemantauan kinerja server dan penanganan kendala responsif 24 jam</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
+<span class="text-xs font-medium text-slate-500">Standar Proteksi OWASP &amp; Kepatuhan UU PDP</span>
+<a class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1" href="#kontak">
+                Pelajari Detail <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: METODOLOGI KERJA 4 LANGKAH (Jelas & Terbuka) -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Alur Kolaborasi</span>
+<h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-3">Metodologi Kerja yang Jelas &amp; Terbuka</h2>
+<p class="text-slate-600 mt-3 text-base">
+            Setiap proyek dikelola dengan transparansi penuh dari awal hingga selesai, memastikan hasil selesai tepat waktu tanpa kejutan biaya.
+          </p>
+</div>
+<!-- 4 Steps Process Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-brand-300 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">
+                01
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Konsultasi &amp; Analisis</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+                Kami mendengarkan target bisnis Anda, mengevaluasi sistem yang sedang berjalan, dan memetakan kebutuhan fitur yang paling esensial.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span>
+<span class="text-xs text-brand-700 font-medium bg-brand-50 px-2 py-1 rounded inline-block">Dokumen Spesifikasi &amp; Timeline</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-brand-300 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">
+                02
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Perancangan &amp; Prototipe</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+                Membuat desain antarmuka interaktif (UI/UX) dan blueprint struktur teknis yang dapat Anda uji sebelum penulisan kode dimulai.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span>
+<span class="text-xs text-brand-700 font-medium bg-brand-50 px-2 py-1 rounded inline-block">Prototipe Desain &amp; Arsitektur</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-brand-300 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">
+                03
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Pembangunan &amp; Pengujian</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+                Pengembangan perangkat lunak dengan update berkala setiap 2 minggu serta pengujian ketat fungsi dan keamanan sebelum perilisan.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span>
+<span class="text-xs text-brand-700 font-medium bg-brand-50 px-2 py-1 rounded inline-block">Demo Rutin &amp; Laporan Uji QA</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-brand-300 transition-colors">
+<div>
+<div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">
+                04
+              </div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">Peluncuran &amp; Dukungan</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+                Peluncuran sistem ke lingkungan produksi tanpa gangguan, transfer dokumentasi lengkap ke tim Anda, serta garansi pemeliharaan berkala.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60">
+<span class="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span>
+<span class="text-xs text-brand-700 font-medium bg-brand-50 px-2 py-1 rounded inline-block">Sistem Live &amp; Serah Terima IP</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: PILIHAN KERJASAMA FLEKSIBEL -->
+<section class="py-20 bg-slate-50 border-t border-slate-200/60">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Model Kolaborasi</span>
+<h2 class="text-3xl font-bold text-slate-900 tracking-tight mt-3">Pilihan Kerjasama yang Fleksibel</h2>
+<p class="text-slate-600 mt-3 text-base">
+            Sesuaikan skema kolaborasi dengan kebutuhan spesifik, ukuran tim internal, dan anggaran investasi digital perusahaan Anda.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Model 1: Tim Dedikasi Penuh -->
+<div class="bg-white rounded-2xl p-8 border-2 border-brand-600/30 shadow-lg relative flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm">
+              Pilihan Favorit
+            </div>
+<div>
+<div class="text-brand-600 mb-4">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Tim Dedikasi Penuh</h3>
+<p class="text-slate-600 text-sm mb-6">
+                Satu tim rekayasa software lengkap yang bekerja eksklusif untuk mengeksekusi visi produk digital jangka panjang perusahaan Anda.
+              </p>
+<div class="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
+<div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">Susunan Tim:</div>
+<ul class="text-xs text-slate-600 space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
+<span class="">1x Project Manager / Koordinator</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
+<span class="">1x Lead Arsitek Perangkat Lunak</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
+<span class="">3-5x Senior Web &amp; Mobile Engineer</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
+<span class="">1x Quality Assurance &amp; Tester</span>
+</li>
+</ul>
+</div>
+<div class="space-y-2 text-xs text-slate-600">
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Komitmen:</span>
+<span class="font-semibold text-slate-800">3 - 12+ Bulan</span>
+</div>
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Pembaruan:</span>
+<span class="font-semibold text-slate-800">Sprint 2 Mingguan</span>
+</div>
+<div class="flex justify-between py-1.5">
+<span class="text-slate-400">Kepemilikan:</span>
+<span class="font-semibold text-brand-600">100% Hak Milik Anda</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow-md shadow-brand-600/20 transition-all" href="#kontak">
+                Pilih Tim Dedikasi
+              </a>
+</div>
+</div>
+<!-- Model 2: Proyek Berbasis Milestone -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="text-brand-600 mb-4">
+<span class="material-symbols-outlined text-4xl">task_alt</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Proyek Berbasis Milestone</h3>
+<p class="text-slate-600 text-sm mb-6">
+                Pembangunan sistem dengan ruang lingkup, anggaran biaya, serta target waktu penyelesaian yang disepakati pasti sejak awal.
+              </p>
+<div class="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
+<div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">Cocok Untuk:</div>
+<ul class="text-xs text-slate-600 space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Peluncuran produk baru (MVP)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Modernisasi sistem lama yang spesifik</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Integrasi API atau migrasi data</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Proyek dengan anggaran terdefinisi</span>
+</li>
+</ul>
+</div>
+<div class="space-y-2 text-xs text-slate-600">
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Durasi:</span>
+<span class="font-semibold text-slate-800">1 - 4 Bulan</span>
+</div>
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Pembayaran:</span>
+<span class="font-semibold text-slate-800">Bertahap per Milestone</span>
+</div>
+<div class="flex justify-between py-1.5">
+<span class="text-slate-400">Garansi Bug:</span>
+<span class="font-semibold text-brand-600">Termasuk 60 Hari</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all" href="#kontak">
+                Mulai Proyek Spesifik
+              </a>
+</div>
+</div>
+<!-- Model 3: Konsultasi Teknis & Penguatan Tim -->
+<div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="text-brand-600 mb-4">
+<span class="material-symbols-outlined text-4xl">person_pin</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Konsultasi Teknis &amp; Advisory</h3>
+<p class="text-slate-600 text-sm mb-6">
+                Dukungan tenaga ahli senior untuk memperkuat tim internal Anda, mengaudit keamanan kode, atau menentukan arah arsitektur software.
+              </p>
+<div class="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
+<div class="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">Profil Tenaga Ahli:</div>
+<ul class="text-xs text-slate-600 space-y-1.5">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Principal Software Architect</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Cloud &amp; DevOps Specialist</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Spesialis Keamanan Siber &amp; Audit</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+<span class="">Langsung bergabung dalam hitungan hari</span>
+</li>
+</ul>
+</div>
+<div class="space-y-2 text-xs text-slate-600">
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Skema:</span>
+<span class="font-semibold text-slate-800">Retainer Bulanan Fleksibel</span>
+</div>
+<div class="flex justify-between py-1.5 border-b border-slate-100">
+<span class="text-slate-400">Kolaborasi:</span>
+<span class="font-semibold text-slate-800">Langsung di Slack/Teams Anda</span>
+</div>
+<div class="flex justify-between py-1.5">
+<span class="text-slate-400">Ramp-up:</span>
+<span class="font-semibold text-brand-600">&lt; 5 Hari Kerja</span>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a class="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all" href="#kontak">
+                Konsultasi Kebutuhan
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: JAMINAN KUALITAS & STANDAR LAYANAN -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="bg-gradient-to-br from-brand-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-xl">
+<!-- Background geometric pattern -->
+<div class="absolute -right-16 -top-16 w-80 h-80 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl relative z-10 mb-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-brand-200 text-xs font-semibold tracking-wider uppercase mb-4">
+<span class="material-symbols-outlined text-sm">verified</span> Komitmen Kontraktual
+            </div>
+<h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Jaminan Kualitas &amp; Standar Layanan</h2>
+<p class="text-slate-300 mt-3 text-base leading-relaxed">
+              Kami percaya bahwa kepercayaan bisnis dibangun di atas transparansi dan akuntabilitas. Setiap kerjasama dilindungi oleh perjanjian resmi yang mengikat.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+<!-- Jaminan 1 -->
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+<div class="w-12 h-12 rounded-xl bg-brand-500/30 text-brand-200 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">speed</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Service Level Agreement (SLA)</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+                Jaminan ketersediaan sistem hingga 99.9% dan respons darurat teknis di bawah 1 jam untuk memastikan operasional bisnis berjalan normal.
+              </p>
+</div>
+<!-- Jaminan 2 -->
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+<div class="w-12 h-12 rounded-xl bg-brand-500/30 text-brand-200 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Kepatuhan Keamanan Data</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+                Penerapan enkripsi standar industri, penandatanganan Perjanjian Kerahasiaan (NDA), dan kepatuhan terhadap regulasi perlindungan data pribadi.
+              </p>
+</div>
+<!-- Jaminan 3 -->
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+<div class="w-12 h-12 rounded-xl bg-brand-500/30 text-brand-200 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-2xl">key</span>
+</div>
+<h3 class="text-lg font-bold mb-2">100% Kepemilikan Kode Sumber</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+                Seluruh hak cipta kode program, aset desain, dan dokumentasi arsitektur sepenuhnya diserahkan menjadi aset sah perusahaan Anda.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CALL TO ACTION BERSIH (Konsultasi Proyek) -->
+<section class="py-20 bg-slate-50 border-t border-slate-200/80" id="kontak">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100/80 text-brand-800 text-xs font-semibold uppercase tracking-wider mb-4">
+<span class="w-2 h-2 rounded-full bg-brand-600"></span> Siap Memulai Transformasi?
+        </div>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Diskusikan Kebutuhan Digital Bisnis Anda Hari Ini
+        </h2>
+<p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          Tim arsitek solusi kami siap mendengarkan rencana proyek Anda, memberikan estimasi transparan, dan membantu merancang peta jalan teknis yang efektif.
+        </p>
+<div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md shadow-brand-600/25 hover:shadow-lg transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">calendar_today</span>
+<span class="">Jadwalkan Sesi Konsultasi</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-xl">description</span>
+<span class="">Minta Penawaran / Portofolio</span>
+</a>
+</div>
+<div class="mt-8 flex items-center justify-center gap-6 text-xs text-slate-500">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-green-600 text-base">check</span>
+<span class="">Tanpa Komitmen Awal</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-green-600 text-base">check</span>
+<span class="">Respon Cepat 1x24 Jam</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-green-600 text-base">check</span>
+<span class="">Perjanjian Kerahasiaan (NDA)</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Clean & Light -->
+<footer class="w-full bg-white border-t border-slate-200 py-12 text-slate-600">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Brand Info -->
+<div class="md:col-span-2 space-y-3">
+<div class="flex items-center gap-2.5"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuADmqvExkknHWNpKXluFYYkwjWMAR8M-SxUvFFZCbAZcKzg6iMqdfZ6ICbhfIVWPUQje6YzrVWWiiJmaBwOuFi1msNVMEx-KCIse6stbmuAGFfgAZP_ZaMIVzRcKScy_yJqohU203Rc2lk4xXFHywbumLD4nDBR3Q3u1Cu7oC9tDuejPwOJOpWr9JQ_5j7sB0SDxTj5yPcrlKyvzI4pnhE5jAk356OKJkK5ei-hvMdVKLdPwTgnbJI15AerkOUb_w0OQdM" alt="CodeLens" class="h-8 w-auto object-contain"></div>
+<p class="text-sm text-slate-500 max-w-sm leading-relaxed">
+            Penyedia solusi rekayasa perangkat lunak dan arsitektur cloud terpercaya untuk bisnis yang menginginkan keandalan, keamanan, dan skalabilitas tinggi.
+          </p>
+<div class="text-xs text-slate-400">
+            Jakarta • Bandung • Surabaya • Singapura
+          </div>
+</div>
+<!-- Links 1 -->
+<div>
+<h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Layanan</h4>
+<ul class="space-y-2 text-sm text-slate-600">
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Aplikasi Web &amp; Mobile</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Transformasi Cloud</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Kecerdasan Buatan &amp; AI</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Keamanan Siber &amp; Audit</a></li>
+</ul>
+</div>
+<!-- Links 2 -->
+<div>
+<h4 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Perusahaan</h4>
+<ul class="space-y-2 text-sm text-slate-600">
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Tentang CodeLens</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Studi Kasus Klien</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Standar Kualitas &amp; SLA</a></li>
+<li class=""><a class="hover:text-brand-600 transition-colors" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<div class="">© 2025 CodeLens. Seluruh hak cipta dilindungi undang-undang.</div>
+<div class="flex gap-6">
+<a class="hover:text-brand-600" href="#">Ketentuan Layanan</a>
+<a class="hover:text-brand-600" href="#">Kebijakan Privasi</a>
+<a class="hover:text-brand-600" href="#">Status Sistem</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>

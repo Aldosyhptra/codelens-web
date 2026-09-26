@@ -1,0 +1,569 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portofolio &amp; Studi Kasus - NexusCraft</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#001e2f",
+            "on-secondary-container": "#004666",
+            "surface-variant": "#dae2fd",
+            "secondary-container": "#e0f2fe",
+            "surface-container": "#f0f4ff",
+            "inverse-primary": "#b7c4ff",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "on-primary-container": "#cad3ff",
+            "surface-container-highest": "#dae2fd",
+            "outline": "#747686",
+            "on-error": "#ffffff",
+            "surface-tint": "#2151da",
+            "tertiary": "#004a66",
+            "primary-container": "#1d4ed8",
+            "secondary-fixed": "#c9e6ff",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "on-primary-fixed-variant": "#0039b5",
+            "surface-container-low": "#f8faff",
+            "primary-fixed": "#dce1ff",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#a3dcff",
+            "secondary-fixed-dim": "#89ceff",
+            "tertiary-container": "#006387",
+            "outline-variant": "#e2e8f0",
+            "surface-container-high": "#e8edff",
+            "on-surface-variant": "#525f7f",
+            "surface-bright": "#ffffff",
+            "primary-fixed-dim": "#b7c4ff",
+            "on-surface": "#0f172a",
+            "on-primary-fixed": "#001551",
+            "on-tertiary-fixed": "#001e2c",
+            "secondary": "#0284c7",
+            "background": "#f8fafc",
+            "on-secondary-fixed-variant": "#004c6e",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#004c69",
+            "inverse-on-surface": "#eef0ff",
+            "inverse-surface": "#283044",
+            "on-background": "#0f172a",
+            "surface": "#ffffff",
+            "surface-dim": "#f1f5f9",
+            "on-tertiary": "#ffffff",
+            "primary": "#1d4ed8",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#c4e7ff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "sans": ["Plus Jakarta Sans", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface font-sans selection:bg-primary/10 selection:text-primary antialiased min-h-screen">
+<!-- Header Navigasi -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant/70 shadow-sm transition-all">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+<div class="flex items-center gap-4 shrink-0">
+<a class="flex items-center gap-3 group" data-path="home" href="#"><img alt="CodeLens" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBICP5w9XrfxzFrk12uM8asjP5lzEPg0YozlHMcxCZgH2RokqCtLRGPd7cnJzO8wG-kqCLVYY1lhEu3p68_C6sMyiJzDkm_FDxz-H-5j4pj9SLjCWfCbm0dvyQUK5rZT0r6gFmLZogf0BsT7OgRNGotTVgKQVogroqpkQJEKVRNx6TsUm4ZSybuPtJled-F_FT4IYVCoRwV2SQPqMB_otNEWc33fWC1Kr-efQrEPa2pfbw_XLJ-Q3ydtj3mSFEI03SUT28"></a>
+<span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-blue-50 border border-blue-100 text-primary text-xs font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+          Solusi Rekayasa Perangkat Lunak
+        </span>
+</div>
+<nav class="hidden lg:flex items-center gap-1">
+<a class="px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 transition-colors" data-path="home" href="#">Beranda</a>
+<a class="px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 transition-colors" data-path="services-and-solutions" href="#">Layanan &amp; Solusi</a>
+<a aria-current="page" class="px-4 py-2 rounded-lg text-sm font-bold bg-blue-50 text-primary transition-colors" data-path="case-studies" href="#">Portofolio &amp; Studi Kasus</a>
+<a class="px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 transition-colors" data-path="about-and-team" href="#">Tentang Kami</a>
+<a class="px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary hover:bg-slate-50 transition-colors" data-path="contact-and-estimate" href="#">Kontak</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-blue-800 shadow-md shadow-blue-500/20 transition-all gap-1.5" data-path="contact-and-estimate" href="#cta-section">
+<span class="">Konsultasi Proyek</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Konten Utama -->
+<main class="w-full pt-28 pb-20">
+<div class="max-w-7xl mx-auto px-6 space-y-16">
+<!-- Header Bagian Utama (Hero Intro) -->
+<section class="text-center max-w-3xl mx-auto pt-6 space-y-4">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm">verified</span>
+          Rekam Jejak Solusi Nyata
+        </div>
+<h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Portofolio &amp; Studi Kasus Nyata
+        </h1>
+<p class="text-lg text-slate-600 leading-relaxed">
+          Pelajari bagaimana kami membantu berbagai perusahaan menyelesaikan tantangan teknologi dan meningkatkan efisiensi operasional.
+        </p>
+<!-- Bar Metrik Global -->
+<div class="pt-4 flex flex-wrap justify-center items-center gap-6 sm:gap-12">
+<div class="text-center">
+<div class="text-2xl sm:text-3xl font-extrabold text-primary">50+</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Sistem Skala Enterprise Selesai</div>
+</div>
+<div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
+<div class="text-center">
+<div class="text-2xl sm:text-3xl font-extrabold text-primary">99.99%</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Rata-rata Uptime Produksi</div>
+</div>
+<div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
+<div class="text-center">
+<div class="text-2xl sm:text-3xl font-extrabold text-primary">4x Lipat</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Peningkatan Efisiensi Rata-rata</div>
+</div>
+</div>
+</section>
+<!-- Filter Kategori Sederhana -->
+<section class="flex items-center justify-center">
+<div class="flex items-center gap-2 overflow-x-auto p-1.5 bg-slate-100/90 rounded-2xl border border-slate-200/80 max-w-full" id="filter-container">
+<button class="filter-btn active px-4 py-2 rounded-xl bg-white text-primary font-semibold text-sm shadow-sm transition-all whitespace-nowrap" data-filter="all">
+            Semua Proyek
+          </button>
+<button class="filter-btn px-4 py-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-white/60 font-medium text-sm transition-all whitespace-nowrap" data-filter="keuangan">
+            Keuangan &amp; Perbankan
+          </button>
+<button class="filter-btn px-4 py-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-white/60 font-medium text-sm transition-all whitespace-nowrap" data-filter="kesehatan">
+            Kesehatan
+          </button>
+<button class="filter-btn px-4 py-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-white/60 font-medium text-sm transition-all whitespace-nowrap" data-filter="logistik">
+            Logistik &amp; Transportasi
+          </button>
+<button class="filter-btn px-4 py-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-white/60 font-medium text-sm transition-all whitespace-nowrap" data-filter="ecommerce">
+            E-Commerce
+          </button>
+</div>
+</section>
+<!-- Featured Case Study: NovaPay (Kartu Utama yang Ramah, Rapi & Bersih) -->
+<section class="case-card w-full rounded-3xl bg-white border border-blue-100 p-8 sm:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden transition-all" data-category="keuangan">
+<div class="absolute top-0 right-0 -mt-8 -mr-8 w-72 h-72 bg-blue-50 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+<div class="lg:col-span-7 space-y-6">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold uppercase tracking-wider">
+                Studi Kasus Unggulan
+              </span>
+<span class="px-3 py-1 rounded-full bg-blue-50 text-primary text-xs font-semibold">
+                Keuangan &amp; Perbankan Digital
+              </span>
+</div>
+<div class="space-y-3">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                NovaPay - Transformasi Sistem Pembayaran Digital Skala Besar
+              </h2>
+<p class="text-base text-slate-600 leading-relaxed">
+                Sebelumnya NovaPay menghadapi kendala transaksi yang tersendat saat lonjakan promosi belanja online. NexusCraft merancang ulang arsitektur pemrosesan pembayaran menjadi terdistribusi, aman, dan tanpa hambatan dengan latensi super rendah di setiap transaksi.
+              </p>
+</div>
+<!-- Metrik Pencapaian Utama -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+<div class="p-4 rounded-2xl bg-blue-50/60 border border-blue-100">
+<div class="text-2xl font-extrabold text-primary">4x Lipat</div>
+<div class="text-xs font-bold text-slate-700 mt-1">Kecepatan Transaksi</div>
+<div class="text-xs text-slate-500 mt-0.5">Kapasitas naik pesat</div>
+</div>
+<div class="p-4 rounded-2xl bg-sky-50/70 border border-sky-100">
+<div class="text-2xl font-extrabold text-sky-700">99.99%</div>
+<div class="text-xs font-bold text-slate-700 mt-1">Uptime Terjamin</div>
+<div class="text-xs text-slate-500 mt-0.5">Tanpa henti saat flash sale</div>
+</div>
+<div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-100">
+<div class="text-2xl font-extrabold text-emerald-700">38% Lebih Hemat</div>
+<div class="text-xs font-bold text-slate-700 mt-1">Biaya Operasional</div>
+<div class="text-xs text-slate-500 mt-0.5">Optimalisasi infrastruktur</div>
+</div>
+</div>
+<!-- Kutipan Klien -->
+<div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">format_quote</span>
+<div class="space-y-1">
+<p class="text-sm text-slate-700 italic">
+                  “NexusCraft berhasil menyulap sistem pembayaran kami menjadi jauh lebih tangguh. Kini pelanggan kami dapat bertransaksi tanpa kendala meski di jam-jam sibuk.”
+                </p>
+<div class="text-xs font-semibold text-primary">Marcus Vance — Kepala Arsitektur Pembayaran NovaPay</div>
+</div>
+</div>
+</div>
+<!-- Visualisasi Diagram Sistem Bersih -->
+<div class="lg:col-span-5 bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between space-y-5">
+<div class="flex items-center justify-between pb-3 border-b border-slate-200">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+<span class="text-xs font-bold text-slate-700">Alur Sistem Pembayaran NovaPay</span>
+</div>
+<span class="text-xs font-semibold text-blue-600 bg-white px-2.5 py-1 rounded-md border border-slate-200">Status Aktif</span>
+</div>
+<div class="space-y-3 font-mono text-xs">
+<div class="p-3 bg-white rounded-xl border border-slate-200 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg">touch_app</span>
+<span class="font-medium text-slate-800">1. Transaksi Masuk Pengguna</span>
+</div>
+<span class="text-emerald-600 font-semibold">&lt; 10 ms</span>
+</div>
+<div class="flex justify-center text-slate-400">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</div>
+<div class="p-3 bg-white rounded-xl border border-slate-200 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-sky-600 text-lg">sync_saved_locally</span>
+<span class="font-medium text-slate-800">2. Validasi &amp; Enkripsi Aman</span>
+</div>
+<span class="text-emerald-600 font-semibold">Terenkripsi</span>
+</div>
+<div class="flex justify-center text-slate-400">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+</div>
+<div class="p-3 bg-blue-50 rounded-xl border border-blue-200 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-lg">task_alt</span>
+<span class="font-semibold text-primary">3. Penyelesaian Saldo &amp; Notifikasi</span>
+</div>
+<span class="text-primary font-bold">Instan</span>
+</div>
+</div>
+<div class="pt-2 text-center">
+<span class="inline-flex items-center gap-1 text-xs font-medium text-slate-500">
+<span class="material-symbols-outlined text-sm text-emerald-500">check_circle</span>
+                Telah diuji pada 50.000 transaksi bersamaan per detik
+              </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid Studi Kasus Lainnya -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<h3 class="text-2xl font-extrabold text-slate-900 tracking-tight">Katalog Portofolio Pilihan</h3>
+<p class="text-slate-600 text-sm mt-1">Implementasi solusi modern yang teruji di berbagai sektor industri.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="case-studies-grid">
+<!-- Kasus 1: Aegis Health -->
+<article class="case-card flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group" data-category="kesehatan">
+<div class="space-y-5">
+<div class="relative h-48 w-full rounded-2xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dashboard rekam medis klinis canggih dengan grafik analitik kesehatan modern dan tata letak dokter yang bersih." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh5eT3NDvCUUewzSlS_DgNGWGcAg0iIzQ67-P4ojbEmjWObXYfpHGVTh7wm8oSYZD87DIWWZvxb8qKLBai1Ll79njVdnXvSnzpwLbLebtVo4l3h3kp21112SJjvHzhlTGmWMZYaWqrMHVU4EPG517D-KCpS9Iya87N5M_nLEQ5HEV8QFqTPceq6F29A1RSJG5TZL713Hfm0kTz83IRXm6Dip92ggNcQ7e94wQ5uqFRIMG6f2miG6gcIA">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-primary text-xs font-semibold shadow-sm">
+                  Kesehatan
+                </div>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  Aegis Health - Sistem Rekam Medis Digital Terenkripsi &amp; Asisten Dokter AI
+                </h4>
+<p class="text-sm text-slate-600 leading-relaxed">
+                  Platform rekam medis digital terenkripsi lengkap dengan asisten AI pintar untuk membantu tenaga medis mendokumentasikan diagnosis lebih cepat dan memangkas waktu input data pasien.
+                </p>
+</div>
+<!-- Metrik Utama -->
+<div class="grid grid-cols-2 gap-3 p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
+<div>
+<div class="text-lg font-extrabold text-primary">-70%</div>
+<div class="text-xs text-slate-600">Waktu Pencatatan Dokter</div>
+</div>
+<div>
+<div class="text-lg font-extrabold text-primary">100%</div>
+<div class="text-xs text-slate-600">Kepatuhan Privasi Data</div>
+</div>
+</div>
+<!-- Tag Teknologi -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Enkripsi End-to-End</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">AI Retrieval</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Cloud Terpadu</span>
+</div>
+</div>
+<div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs text-slate-500 font-medium">2.1 Juta Data Pasien Terkelola</span>
+<a class="inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-blue-800 transition-colors" href="#cta-section">
+                Pelajari <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Kasus 2: OmniFlow -->
+<article class="case-card flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group" data-category="logistik">
+<div class="space-y-5">
+<div class="relative h-48 w-full rounded-2xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Peta pelacakan armada kapal dan transportasi darat dengan indikator rute digital." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFPNoHYywu9agG8p4nGRcieOCqc63VzcVCoXlpclX8VHOYSKczLaPeT4Sf9DXk4jrWgZF6iFf2UcdyqyJiug7udawZrHTm1purefdER5fVB2RlJxo4Cg7Syyo_JSQ_ByNLj4ASaIWat40XfyD2y_xZuiDdCARw94NVIm6zAabqlN7OChNRCyhbOF22FHM2l-GmbFfA-deFsc0HVahHfTRQhhbKJ3axs1h9o6HvQd3BH6IYL74TpAgyhQ">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-primary text-xs font-semibold shadow-sm">
+                  Logistik &amp; Transportasi
+                </div>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  OmniFlow - Pelacakan Logistik &amp; Armada Real-Time Lintas Wilayah
+                </h4>
+<p class="text-sm text-slate-600 leading-relaxed">
+                  Sistem pemantauan armada pintar dan telemetri langsung untuk melacak 140.000 titik transportasi darat dan maritim, meminimalkan keterlambatan dan menjamin keamanan kargo bernilai tinggi.
+                </p>
+</div>
+<!-- Metrik Utama -->
+<div class="grid grid-cols-2 gap-3 p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
+<div>
+<div class="text-lg font-extrabold text-primary">2.4 Juta</div>
+<div class="text-xs text-slate-600">Sinyal GPS / Detik</div>
+</div>
+<div>
+<div class="text-lg font-extrabold text-primary">0%</div>
+<div class="text-xs text-slate-600">Data Hilang di Jalan</div>
+</div>
+</div>
+<!-- Tag Teknologi -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">IoT Streaming</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Peta Interaktif</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Cloud Fleet</span>
+</div>
+</div>
+<div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs text-slate-500 font-medium">Cakupan 9 Wilayah Regional</span>
+<a class="inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-blue-800 transition-colors" href="#cta-section">
+                Pelajari <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Kasus 3: MitraRetail -->
+<article class="case-card flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group" data-category="ecommerce">
+<div class="space-y-5">
+<div class="relative h-48 w-full rounded-2xl overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tampilan etalase online e-commerce modern dengan katalog produk yang cepat dimuat pada layar bersih." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBOSDuuI17Mny_Sz8CoXVD1KVoXCNTJb4vAWyW7uWddK8V2IvzMaD8uX-RDyH7UTB2pwlw4O9CzXjN0oWvkZ5_IT9hr-AXV6KzjhVwvgzBK1v0PB-gFmTd3V6dguV584aBzZhXy0QhINtnnYNIDhafuDKNREhPHXLUuGx-J7cIg7malb33BXZMVQWo483spIbRvdwYPFK6x_y85EOT4C3wagW9SuXEFSB1dpcK_QyjIN-gPjMQHMjWrw">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-primary text-xs font-semibold shadow-sm">
+                  E-Commerce
+                </div>
+</div>
+<div class="space-y-2">
+<h4 class="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  MitraRetail - Platform E-Commerce Cepat &amp; Skalabel
+                </h4>
+<p class="text-sm text-slate-600 leading-relaxed">
+                  Pengembangan ulang toko daring multi-cabang dengan kecepatan muat halaman kurang dari 1 detik, manajemen stok otomatis, dan checkout super lancar yang menaikkan konversi belanja hingga 45%.
+                </p>
+</div>
+<!-- Metrik Utama -->
+<div class="grid grid-cols-2 gap-3 p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
+<div>
+<div class="text-lg font-extrabold text-primary">&lt; 0.8 dtk</div>
+<div class="text-xs text-slate-600">Kecepatan Muat Toko</div>
+</div>
+<div>
+<div class="text-lg font-extrabold text-primary">+45%</div>
+<div class="text-xs text-slate-600">Kenaikan Penjualan</div>
+</div>
+</div>
+<!-- Tag Teknologi -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Headless Commerce</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Auto-Scale Cloud</span>
+<span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Sync Multi-Gudang</span>
+</div>
+</div>
+<div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
+<span class="text-xs text-slate-500 font-medium">1.5M Pengunjung Bulanan Aktif</span>
+<a class="inline-flex items-center gap-1 text-sm font-bold text-primary hover:text-blue-800 transition-colors" href="#cta-section">
+                Pelajari <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Tabel Perbandingan Sederhana: Sebelum & Sesudah Bersama NexusCraft -->
+<section class="w-full rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs font-bold text-primary uppercase tracking-wider">Perbandingan Dampak Kerja Nyata</span>
+<h3 class="text-2xl font-extrabold text-slate-900 mt-1">Sebelum &amp; Sesudah Bersama NexusCraft</h3>
+<p class="text-sm text-slate-600 mt-0.5">Perubahan terukur yang dialami oleh mitra teknologi kami setelah implementasi arsitektur baru.</p>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 text-primary text-xs font-semibold border border-blue-100 self-start sm:self-auto">
+<span class="material-symbols-outlined text-base">assessment</span>
+            Data Rata-Rata Seluruh Proyek
+          </div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-sm">
+<thead>
+<tr class="text-xs text-slate-500 uppercase tracking-wider border-b border-slate-200">
+<th class="pb-3.5 font-bold">Fokus Kinerja</th>
+<th class="pb-3.5 font-bold text-slate-500">Sebelum Bersama NexusCraft</th>
+<th class="pb-3.5 font-bold text-primary">Sesudah Bersama NexusCraft</th>
+<th class="pb-3.5 font-bold text-right text-emerald-700">Manfaat Langsung</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100">
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-4 font-bold text-slate-900 flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-blue-50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+</span>
+<span class="">Kecepatan Rilis Aplikasi</span>
+</td>
+<td class="py-4 text-slate-500">2-3 minggu per pembaharuan (manual &amp; rentan bug)</td>
+<td class="py-4 text-primary font-semibold">Tiap hari dengan otomasi penuh (CI/CD)</td>
+<td class="py-4 text-right font-bold text-emerald-600">8x Lebih Cepat Meluncur ke Pasar</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-4 font-bold text-slate-900 flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-blue-50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</span>
+<span class="">Waktu Henti Server (Downtime)</span>
+</td>
+<td class="py-4 text-slate-500">Sering tumbang saat trafik tinggi mingguan</td>
+<td class="py-4 text-primary font-semibold">Berkurang drastis hingga 99.99% ketersediaan</td>
+<td class="py-4 text-right font-bold text-emerald-600">Bebas Gangguan Jam Sibuk</td>
+</tr>
+<tr class="hover:bg-slate-50/70 transition-colors">
+<td class="py-4 font-bold text-slate-900 flex items-center gap-2.5">
+<span class="w-8 h-8 rounded-lg bg-blue-50 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">build_circle</span>
+</span>
+<span class="">Kemudahan Pemeliharaan</span>
+</td>
+<td class="py-4 text-slate-500">Struktur kode rumit &amp; dokumentasi minim</td>
+<td class="py-4 text-primary font-semibold">Arsitektur modular, rapi, dan mudah dikembangkan</td>
+<td class="py-4 text-right font-bold text-emerald-600">Biaya Perawatan Turun 40%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- CTA Akhir yang Bersih & Ramah -->
+<section class="w-full rounded-3xl bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-800 p-8 sm:p-12 text-white relative overflow-hidden shadow-xl" id="cta-section">
+<div class="max-w-2xl space-y-4 relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-semibold">
+<span class="material-symbols-outlined text-sm">handshake</span>
+            Kolaborasi Rekayasa Digital
+          </div>
+<h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">
+            Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.
+          </h2>
+<p class="text-blue-100 text-base leading-relaxed">
+            Diskusikan kebutuhan aplikasi, platform, atau pembaruan infrastruktur Anda langsung bersama arsitek perangkat lunak senior kami.
+          </p>
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<a class="px-6 py-3.5 rounded-xl bg-white text-blue-800 hover:bg-blue-50 font-bold text-sm text-center shadow-lg transition-all flex items-center justify-center gap-2" data-path="contact-and-estimate" href="#">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+              Jadwalkan Konsultasi Gratis
+            </a>
+<a class="px-6 py-3.5 rounded-xl bg-blue-600/40 hover:bg-blue-600/60 border border-white/20 text-white font-semibold text-sm text-center transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-lg">chat</span>
+              Chat WhatsApp Tim Ahli
+            </a>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Bersih & Sederhana -->
+<footer class="w-full bg-white border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+<div class="space-y-4 md:col-span-2">
+<div class="flex items-center gap-3"><img alt="CodeLens" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV_RmoAA3PVYQbmguh08RrcM1XCo-WJRLYEXSJ9mqzDxFKkyWYklhpN-Ekp-nX9ia1WHhN-T-QDuLaKkSGa-mBD33v10bfZV6zrAatkUbqTMBYbAKpxXwBWTZmoEG8ceRutp9McSyZdiOr3GFdaE7OCgEoCi5ELIDlDVVXKRUm9eD8IJvXMWMk0sCsa_NuNxCsP2rUU7rHjnYe-35nlNiUHCAX2zQM-3vDGqAbgoU8k1CyF2kadRftC7YUji7F03bHbi4"></div>
+<p class="text-sm text-slate-600 max-w-sm leading-relaxed">
+            Mitra pengembangan perangkat lunak terpercaya untuk perusahaan visioner di seluruh Indonesia dan global.
+          </p>
+<div class="flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-fit">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Semua Sistem &amp; Layanan Berjalan Normal
+          </div>
+</div>
+<div class="space-y-3">
+<div class="text-xs font-bold text-slate-900 uppercase tracking-wider">Navigasi Utama</div>
+<ul class="space-y-2 text-sm text-slate-600">
+<li class=""><a class="hover:text-primary transition-colors" href="#">Beranda</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Layanan &amp; Solusi</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Portofolio &amp; Studi Kasus</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#">Tentang Kami</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<div class="text-xs font-bold text-slate-900 uppercase tracking-wider">Kontak &amp; Lokasi</div>
+<ul class="space-y-2 text-sm text-slate-600">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">location_on</span>
+              Jakarta, Indonesia
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">mail</span>
+              halo@nexuscraft.id
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">call</span>
+              +62 21 5550 8920
+            </li>
+</ul>
+</div>
+</div>
+<div class="pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+<div class="">© 2025 NexusCraft Engineering Indonesia. Seluruh hak cipta dilindungi undang-undang.</div>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-primary transition-colors" href="#">Syarat Layanan</a>
+<a class="hover:text-primary transition-colors" href="#">Keamanan Data</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Script Interaksi Filter Kategori Sederhana -->
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.case-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'bg-white', 'text-primary', 'shadow-sm', 'font-semibold');
+          b.classList.add('text-slate-600', 'font-medium');
+        });
+        
+        btn.classList.add('active', 'bg-white', 'text-primary', 'shadow-sm', 'font-semibold');
+        btn.classList.remove('text-slate-600', 'font-medium');
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+
+</body></html>
