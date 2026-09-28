@@ -1,4 +1,5 @@
 export default function Footer() {
+  const logoSrc = "/images/logo/logo2.png";
   return (
     <footer className="w-full bg-slate-900 text-slate-400 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
@@ -27,11 +28,11 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider">Navigasi</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Beranda</a></li>
-              <li><a href="#layanan" className="hover:text-white transition-colors">Layanan &amp; Solusi</a></li>
-              <li><a href="#studi-kasus" className="hover:text-white transition-colors">Portofolio Klien</a></li>
-              <li><a href="#tentang-kami" className="hover:text-white transition-colors">Tentang Tim Kami</a></li>
-              <li><a href="#kontak" className="hover:text-white transition-colors">Hubungi Kami</a></li>
+              <li><a href="/" className="hover:text-white transition-colors">Beranda</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Layanan &amp; Solusi</a></li>
+              <li><a href="/portfolio" className="hover:text-white transition-colors">Portofolio Klien</a></li>
+              <li><a href="/tentang-kami" className="hover:text-white transition-colors">Tentang Tim Kami</a></li>
+              <li><a href="/kontak" className="hover:text-white transition-colors">Hubungi Kami</a></li>
             </ul>
           </div>
 
@@ -39,11 +40,11 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-3">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider">Layanan Kami</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#layanan" className="hover:text-white transition-colors">Aplikasi Web &amp; Mobile</a></li>
-              <li><a href="#layanan" className="hover:text-white transition-colors">Solusi Cloud &amp; Kubernetes</a></li>
-              <li><a href="#layanan" className="hover:text-white transition-colors">Penerapan AI &amp; Otomasi</a></li>
-              <li><a href="#layanan" className="hover:text-white transition-colors">Audit &amp; Keamanan Siber</a></li>
-              <li><a href="#layanan" className="hover:text-white transition-colors">Konsultasi Arsitektur Digital</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Aplikasi Web &amp; Mobile</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Solusi Cloud &amp; Kubernetes</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Penerapan AI &amp; Otomasi</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Audit &amp; Keamanan Siber</a></li>
+              <li><a href="/layanan" className="hover:text-white transition-colors">Konsultasi Arsitektur Digital</a></li>
             </ul>
           </div>
 
@@ -57,11 +58,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-blue-500 text-base">&#9993;</span>
-                <span>halo@nexuscraft.id</span>
+                <span>halo@codelens.co.id</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-blue-500 text-base">&#9742;</span>
-                <span>+62 (021) 555-8920</span>
+                <span>+62 812-8900-1234</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-blue-500 text-base">&#9201;</span>

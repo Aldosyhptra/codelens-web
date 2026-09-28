@@ -1,27 +1,14 @@
-"use client";
-
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
+export const metadata = {
+  title: "Tentang Kami — CodeLens: Dedikasi & Integritas Sejak 2018",
+  description:
+    "Tentang CodeLens: didirikan oleh praktisi teknologi berpengalaman dengan komitmen menghadirkan perangkat lunak berkualitas tinggi, aman, dan mudah digunakan.",
+};
 
 export default function TentangKami() {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: "ease-out",
-      once: true,
-      offset: 50,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
-    <>
-      <Navbar />
-      <main className="w-full">
+    <main className="w-full">
         {/* HERO SECTION */}
         <section className="relative w-full pt-16 pb-8 md:pt-24 md:pb-28 bg-[#F8FAFF] overflow-hidden">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
@@ -495,9 +482,5 @@ export default function TentangKami() {
           </div>
         </section>
       </main>
-
-      <Footer />
-
-    </>
   );
 }
