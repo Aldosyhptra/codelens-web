@@ -1,29 +1,17 @@
-"use client";
-
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
+export const metadata = {
+  title: "Beranda — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
+  description:
+    "CodeLens mendampingi bisnis dalam merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi AI dengan jaminan keamanan dan kinerja tinggi.",
+};
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: "ease-out",
-      once: true,
-      offset: 50,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
-      <Navbar />
       <main className="grow">
         {/* Hero Section */}
-        <section className="relative w-full bg-linear-to-b from-[#e7e7e7] via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <section className="relative w-full bg-linear-to-b from-[#F8FAFC] via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
           <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center" data-aos="zoom-in">
               {/* Teks Hero */}
@@ -39,7 +27,7 @@ export default function Home() {
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <a href="#kontak" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-lg shadow-blue-600/20 hover:scale-[1.01] transition-all">
+                  <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-lg shadow-blue-600/20 hover:scale-[1.01] transition-all">
                     <span>Konsultasi Gratis</span>
                     <span className="material-symbols-outlined text-xl">arrow_forward</span>
                   </a>
@@ -168,7 +156,7 @@ export default function Home() {
         </section>
 
         {/* Layanan Unggulan */}
-        <section className="w-full py-10 md:py-20 bg-[#FAFBFC]" id="layanan">
+        <section className="w-full py-10 md:py-20 bg-[#F8FAFC]" id="layanan">
           <div className="w-full justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full flex justify-center mb-16">
               <div className="text-center">
@@ -213,9 +201,9 @@ export default function Home() {
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Hasil Nyata</span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Studi Kasus &amp; Portofolio Unggulan</h2>
-                <p className="text-slate-600 text-base mt-2 max-w-xl">Lihat bagaimana kami mentransformasi sistem krusial klien menjadi solusi yang lebih cepat, aman, dan siap bertumbuh.</p>
+                              <p className="text-slate-600 text-base mt-2 max-w-xl">Lihat bagaimana kami mentransformasi sistem krusial klien menjadi solusi yang lebih cepat, aman, dan siap bertumbuh.</p>
               </div>
-              <a href="#kontak" className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-700 transition-colors mt-4 md:mt-0 text-sm">
+              <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-700 transition-colors mt-4 md:mt-0 text-sm">
                 <span>Pelajari Semua Studi Kasus</span>
                 <span className="material-symbols-outlined text-lg">arrow_forward</span>
               </a>
@@ -261,7 +249,7 @@ export default function Home() {
         </section>
 
         {/* Testimoni Klien */}
-        <section className="w-full py-20 bg-blue-50/50" id="tentang-kami">
+        <section className="w-full py-20 bg-[#F8FAFC]" id="tentang-kami">
           <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-5xl bg-white rounded-3xl p-8 sm:p-12 border border-blue-100 shadow-xl flex flex-col md:flex-row items-center gap-8 lg:gap-12" data-aos="fade-up">
               <div className="flex-1">
@@ -305,11 +293,11 @@ export default function Home() {
                   <p className="text-blue-100 text-base sm:text-lg leading-relaxed">Diskusikan kebutuhan proyek Anda langsung dengan arsitek perangkat lunak senior kami. Kami siap memberikan masukan arsitektur teknis secara gratis tanpa komitmen apa pun.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
-                  <a href="mailto:kontak@codelens.id" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-700 font-bold text-base hover:bg-blue-50 shadow-lg hover:scale-[1.02] transition-all">
+                  <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-700 font-bold text-base hover:bg-blue-50 shadow-lg hover:scale-[1.02] transition-all">
                     <span>Jadwalkan Konsultasi Sekarang</span>
                     <span className="material-symbols-outlined text-xl">calendar_today</span>
                   </a>
-                  <a href="#layanan" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-blue-800/60 border border-white/20 text-white font-semibold text-base hover:bg-blue-800 transition-all">
+                  <a href="/layanan" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-blue-800/60 border border-white/20 text-white font-semibold text-base hover:bg-blue-800 transition-all">
                     <span>Lihat Layanan Kami</span>
                   </a>
                 </div>
@@ -318,7 +306,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -1,28 +1,17 @@
-"use client";
+import Image from "next/image";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+export const metadata = {
+  title: "Layanan — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
+  description:
+    "Layanan rekayasa perangkat lunak lengkap dari CodeLens: pengembangan web & mobile, arsitektur cloud, integrasi AI, dan keamanan sistem.",
+};
 
 export default function Layanan() {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      easing: "ease-out",
-      once: true,
-      offset: 50,
-    });
-    AOS.refresh();
-  }, []);
-
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
-      <Navbar />
       <main className="grow">
         {/* HERO SECTION */}
-        <section className="relative pt-16 pb-8 md:pt-24 md:pb-28 bg-[#F8FAFC] overflow-hidden">
+        <section className="relative pt-16 pb-8 md:pt-24 md:pb-28 bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
           <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-blue-100/40 blur-3xl rounded-full pointer-events-none -z-10" />
           <div className="w-full px-4 md:px-8 flex flex-col items-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
@@ -86,7 +75,7 @@ export default function Layanan() {
                   </div>
                   <div className="mt-8 pt-4 md:flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Standar Aksesibilitas WCAG &amp; SEO Friendly</span>
-                    <a href="#kontak" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
                   </div>
                 </div>
 
@@ -106,7 +95,7 @@ export default function Layanan() {
                   </div>
                   <div className="mt-8 pt-4 md:flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Efisiensi Biaya Server hingga 35-50%</span>
-                    <a href="#kontak" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
                   </div>
                 </div>
 
@@ -126,7 +115,7 @@ export default function Layanan() {
                   </div>
                   <div className="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Privasi Data Terenkripsi &amp; Nol Kebocoran</span>
-                    <a href="#kontak" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
                   </div>
                 </div>
 
@@ -146,7 +135,7 @@ export default function Layanan() {
                   </div>
                   <div className="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Standar Proteksi OWASP &amp; Kepatuhan UU PDP</span>
-                    <a href="#kontak" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
                   </div>
                 </div>
               </div>
@@ -216,7 +205,7 @@ export default function Layanan() {
                       <div className="flex justify-between py-1.5"><span className="text-slate-400">Kepemilikan:</span><span className="font-semibold text-blue-600">100% Hak Milik Anda</span></div>
                     </div>
                   </div>
-                  <div className="mt-8"><a href="#kontak" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-600/20 transition-all">Pilih Tim Dedikasi</a></div>
+                  <div className="mt-8"><a href="/kontak#jadwal-cto" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-md shadow-blue-600/20 transition-all">Pilih Tim Dedikasi</a></div>
                 </div>
 
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="150">
@@ -239,7 +228,7 @@ export default function Layanan() {
                       <div className="flex justify-between py-1.5"><span className="text-slate-400">Garansi Bug:</span><span className="font-semibold text-blue-600">Termasuk 60 Hari</span></div>
                     </div>
                   </div>
-                  <div className="mt-8"><a href="#kontak" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all">Mulai Proyek Spesifik</a></div>
+                  <div className="mt-8"><a href="/kontak#jadwal-cto" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all">Mulai Proyek Spesifik</a></div>
                 </div>
 
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="200">
@@ -262,7 +251,7 @@ export default function Layanan() {
                       <div className="flex justify-between py-1.5"><span className="text-slate-400">Ramp-up:</span><span className="font-semibold text-blue-600">&lt; 5 Hari Kerja</span></div>
                     </div>
                   </div>
-                  <div className="mt-8"><a href="#kontak" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all">Konsultasi Kebutuhan</a></div>
+                  <div className="mt-8"><a href="/kontak#jadwal-cto" className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold transition-all">Konsultasi Kebutuhan</a></div>
                 </div>
               </div>
             </div>
@@ -310,7 +299,7 @@ export default function Layanan() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Diskusikan Kebutuhan Digital Bisnis Anda Hari Ini</h2>
               <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">Tim arsitek solusi kami siap mendengarkan rencana proyek Anda, memberikan estimasi transparan, dan membantu merancang peta jalan teknis yang efektif.</p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/25 hover:shadow-lg transition-all flex items-center justify-center gap-2"><span className="material-symbols-outlined text-xl">calendar_today</span><span>Jadwalkan Sesi Konsultasi</span></a>
+                <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/25 hover:shadow-lg transition-all flex items-center justify-center gap-2"><span className="material-symbols-outlined text-xl">calendar_today</span><span>Jadwalkan Sesi Konsultasi</span></a>
                 <a href="#" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2"><span className="material-symbols-outlined text-xl">description</span><span>Minta Penawaran / Portofolio</span></a>
               </div>
               <div className="mt-8 flex items-center justify-center gap-6 text-xs text-slate-500">
@@ -322,7 +311,6 @@ export default function Layanan() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

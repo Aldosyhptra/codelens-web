@@ -1,7 +1,12 @@
+"use client";
+
 import { useState, useEffect, useCallback, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { getCachedImageSrc } from "@/lib/imageCache";
 import Link from "next/link";
+
+const logoSrc = getCachedImageSrc("/images/logo/logo2.png") || "/images/logo/logo2.png";
 
 const navLinks = [
   { label: "Beranda", href: "/" },
@@ -61,7 +66,7 @@ export default function Navbar() {
         <div className="w-full px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-3 shrink-0 group">
             <Image
-              src="/images/logo/logo2.png"
+              src={logoSrc}
               alt="CodeLens"
               className="h-15 w-auto object-contain"
               width={100}
@@ -90,7 +95,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <Link
-              href="#kontak"
+              href="/kontak#jadwal-cto"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 shadow-md shadow-blue-600/25 hover:shadow-lg transition-all"
             >
               <span>Jadwalkan Konsultasi</span>
@@ -132,7 +137,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 transition-opacity duration-300 ease-in-out delay-100">
           <Link href="/" onClick={() => { closeMenu(); }} className="flex items-center gap-3 shrink-0">
             <Image
-              src="/images/logo/logo2.png"
+              src={logoSrc}
               alt="CodeLens"
               className="h-15 w-auto object-contain"
               width={100}
@@ -171,7 +176,7 @@ export default function Navbar() {
 
         <div className="mt-auto px-6 pb-8 transition-opacity duration-500 ease-in-out delay-300">
           <Link
-            href="/#kontak"
+            href="/kontak#jadwal-cto"
             onClick={() => { closeMenu(); }}
             className="block w-full text-center px-5 py-4 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 shadow-lg shadow-blue-600/25 transition-all"
             style={{ opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(12px)", transition: `opacity 0.3s ease 0.4s, transform 0.3s ease 0.4s` }}
