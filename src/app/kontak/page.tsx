@@ -64,7 +64,7 @@ const durations = [
                     alert("Terima kasih! Permintaan konsultasi Anda telah berhasil dikirim.");
                   }}
                 >
-                  <div className="flex items-center justify-between pb-6 border-b border-slate-100">
+                  <div className="flex items-center justify-between pb-6 border-b border-slate-100" id="jadwal-cto" >
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
                         <span className="material-symbols-outlined text-xl">calculate</span>
@@ -174,7 +174,7 @@ const durations = [
                 </form>
               </div>
               <div className="lg:col-span-5 flex flex-col gap-6">
-                <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-xl shadow-slate-100 border border-slate-100 relative overflow-hidden" id="jadwal-cto" data-aos="fade-up" data-aos-delay="200">
+                <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-xl shadow-slate-100 border border-slate-100 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-full -mr-10 -mt-10 pointer-events-none" />
                   <div className="flex items-center gap-4 mb-4">
                     <Image alt="Elena Vance - CTO" className="w-14 h-14 rounded-full object-cover border-2 border-white shadow" src="/images/beranda/1.jpg" width={56} height={56} />
