@@ -72,7 +72,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" dir="ltr" className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}>
-      <body className="min-h-screen bg-background text-on-surface antialiased selection:bg-primary selection:text-white">
+      <body className="min-h-screen bg-background text-on-surface antialiased">
               <AosInitializer />
               <Navbar />
               {children}
