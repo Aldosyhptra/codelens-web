@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
       <main className="grow">
         {/* Hero Section */}
-        <section className="relative w-full min-h-screen flex flex-col justify-center bg-linear-to-b from-[#F8FAFC] via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
+        <section className="relative w-full bg-linear-to-b from-[#F8FAFC] via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
           <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center" data-aos="zoom-in">
               {/* Teks Hero */}

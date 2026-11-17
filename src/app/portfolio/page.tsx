@@ -110,7 +110,7 @@ export default function PortfolioPage() {
 
   return (
     <div className="flex flex-col flex-1 items-center font-sans text-on-surface bg-[#F8FAFC] w-full overflow-x-hidden">
-      <section className="relative w-full min-h-screen flex flex-col justify-center py-8 md:pt-14 md:pb-10 bg-[#F8FAFC] overflow-hidden">
+      <section className="relative w-full py-8 md:pt-14 md:pb-10 bg-[#F8FAFC] overflow-hidden">
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-blue-100/40 blur-3xl rounded-full pointer-events-none -z-10" />
         <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
           <div className="w-full max-w-5xl">

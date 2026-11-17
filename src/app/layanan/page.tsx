@@ -11,7 +11,7 @@ export default function Layanan() {
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
       <main className="grow">
         {/* HERO SECTION */}
-        <section className="relative min-h-screen flex flex-col justify-center pt-16 pb-8 md:pt-24 md:pb-28 bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
+        <section className="relative pt-16 pb-8 md:pt-24 md:pb-28 bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
           <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-blue-100/40 blur-3xl rounded-full pointer-events-none -z-10" />
           <div className="w-full px-4 md:px-8 flex flex-col items-center">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
