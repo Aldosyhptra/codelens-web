@@ -11,32 +11,32 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
       <main className="grow">
         {/* Hero Section */}
-        <section className="relative w-full bg-linear-to-b from-[#F8FAFC] via-white to-white pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
-          <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
-            <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center" data-aos="zoom-in">
+        <section className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
+          <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
+            <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center" data-aos="zoom-in">
               {/* Teks Hero */}
               <div className="lg:col-span-7 text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-bold uppercase tracking-wide mb-6" >
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-6" >
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
                 </div>
-                <h1 className="text-xl sm:text-3xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
                   Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> &amp; Skala Global
                 </h1>
-                <p className="text-md sm:text-lg text-slate-600 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-lg shadow-blue-600/20 hover:scale-[1.01] transition-all">
+                  <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-lg shadow-blue-600/20 hover:scale-[1.01] transition-all">
                     <span>Konsultasi Gratis</span>
                     <span className="material-symbols-outlined text-xl">arrow_forward</span>
                   </a>
-                  <a href="#studi-kasus" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-blue-600 hover:border-blue-300 hover:bg-blue-50/40 font-semibold text-base transition-all shadow-sm">
+                  <a href="#studi-kasus" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-blue-600 hover:border-blue-300 hover:bg-blue-50/40 font-semibold text-base transition-all shadow-sm">
                     <span className="material-symbols-outlined text-blue-600 text-xl">folder_open</span>
                     <span>Lihat Hasil Karya</span>
                   </a>
                 </div>
-                <div className="pt-8 mt-8 border-t border-slate-200/70 flex flex-wrap justify-center items-center md:items-center gap-4 text-slate-600 text-sm">
+                <div className="pt-5 mt-5 border-t border-slate-200/70 flex flex-wrap justify-center items-center md:items-center gap-4 text-slate-600 text-sm">
                   <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-blue-600 text-lg">verified</span>
                     <span className="font-medium">Standar Kualitas Tertinggi</span>
@@ -52,8 +52,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300">
-                  <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300">
+                  <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
                         <span className="material-symbols-outlined">insights</span>
@@ -68,7 +68,7 @@ export default function Home() {
                       Aktif 100%
                     </span>
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100">
                       <div className="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
                         <span>Kecepatan Respons Server</span>
@@ -88,17 +88,17 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-3 pt-2">
-                      <div className="p-3.5 rounded-xl bg-blue-50 text-center">
+                      <div className="p-3 rounded-xl bg-blue-50 text-center">
                         <p className="text-xs font-semibold text-blue-700 mb-1">Skalabilitas</p>
                         <p className="text-lg font-bold text-slate-900">Otomatis</p>
                       </div>
-                      <div className="p-3.5 rounded-xl bg-blue-50 text-center">
+                      <div className="p-3 rounded-xl bg-blue-50 text-center">
                         <p className="text-xs font-semibold text-blue-700 mb-1">Enkripsi Data</p>
                         <p className="text-lg font-bold text-slate-900">End-to-End</p>
                       </div>
                     </div>
                   </div>
-                  <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
                     <span className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-blue-600 text-sm">support_agent</span>
                       Dukungan Ahli 24/7
@@ -125,9 +125,9 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
                     <span className="material-symbols-outlined text-2xl">{item.icon}</span>
                   </div>
-                  <p className="text-xl lg:text-4xl font-extrabold text-blue-600 tracking-tight">{item.value}</p>
+                  <p className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600 tracking-tight">{item.value}</p>
                   <p className="text-sm md:text-lg font-bold text-slate-900 mt-1">{item.title}</p>
-                  <p className="text-xs md:text-md text-slate-500 mt-0.5">{item.desc}</p>
+                  <p className="text-xs text-slate-500 mt-0.5">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="w-full justify-center px-4 sm:px-6 lg:px-8">
             <div className="w-full flex justify-center mb-16">
               <div className="text-center">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">Layanan Unggulan</div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-3">Layanan Unggulan</div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Solusi Rekayasa Digital Komprehensif</h2>
               <p className="text-slate-600 text-base sm:text-lg md:max-w-3/5 mt-4 mx-auto">Dari ide awal hingga implementasi produksi berskala besar, kami menghadirkan keahlian menyeluruh untuk mengakselerasi transformasi teknologi Anda.</p>
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Hasil Nyata</span>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Studi Kasus &amp; Portofolio Unggulan</h2>
-                              <p className="text-slate-600 text-base mt-2 max-w-xl">Lihat bagaimana kami mentransformasi sistem krusial klien menjadi solusi yang lebih cepat, aman, dan siap bertumbuh.</p>
+                              <p className="text-slate-600 text-base sm:text-lg mt-2 max-w-xl">Lihat bagaimana kami mentransformasi sistem krusial klien menjadi solusi yang lebih cepat, aman, dan siap bertumbuh.</p>
               </div>
               <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-700 transition-colors mt-4 md:mt-0 text-sm">
                 <span>Pelajari Semua Studi Kasus</span>
@@ -231,13 +231,13 @@ export default function Home() {
                       <Image alt={caseStudy.title} className="w-full h-full object-cover" src={caseStudy.image} width={800} height={400} />
                       <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-blue-700 text-xs font-bold shadow-sm">{caseStudy.tag}</span>
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 leading-snug">{caseStudy.title}</h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 leading-snug">{caseStudy.title}</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6 text-justify md:text-start">{caseStudy.desc}</p>
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center p-4 rounded-xl bg-white border border-slate-200 text-center">
                     {caseStudy.metrics.map((m) => (
                       <div className="flex flex-col items-center" key={m.label}>
-                        <p className="text-xl sm:text-2xl font-extrabold text-blue-600">{m.value}</p>
+                        <p className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">{m.value}</p>
                         <p className="text-xs font-medium text-slate-500 mt-1">{m.label}</p>
                       </div>
                     ))}
@@ -289,7 +289,7 @@ export default function Home() {
                     <span className="w-2 h-2 rounded-full bg-emerald-400" />
                     Konsultasi Tersedia Minggu Ini
                   </div>
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-4">Siap Membangun Sistem Digital yang Andal &amp; Aman?</h2>
+                  <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4">Siap Membangun Sistem Digital yang Andal &amp; Aman?</h2>
                   <p className="text-blue-100 text-base sm:text-lg leading-relaxed">Diskusikan kebutuhan proyek Anda langsung dengan arsitek perangkat lunak senior kami. Kami siap memberikan masukan arsitektur teknis secara gratis tanpa komitmen apa pun.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">

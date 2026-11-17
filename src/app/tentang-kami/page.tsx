@@ -23,7 +23,7 @@ export default function TentangKami() {
                     Tentang CodeLens — <br />
                     <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-700 via-blue-600 to-sky-600">Membangun Teknologi dengan Hati &amp; Presisi.</span>
                   </h1>
-                  <p className="mt-5 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl">
+                  <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
                     Didirikan oleh para praktisi teknologi berpengalaman dengan komitmen menghadirkan perangkat lunak berkualitas tinggi, aman, dan mudah digunakan oleh siapa saja.
                   </p>
                   <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -112,13 +112,13 @@ export default function TentangKami() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div>
               <div className="text-center max-w-2xl mx-auto mb-14">
-                <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider border border-blue-100">
+                <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide border border-blue-100">
                   Fondasi Nilai Kami
                 </span>
-                <h2 className="text-3xl font-extrabold text-slate-900 mt-3">
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
                   Nilai Utama CodeLens
                 </h2>
-                <p className="text-slate-600 mt-3 text-base">
+                <p className="text-slate-600 mt-3 text-sm">
                   Prinsip dasar yang kami rawat bersama dalam setiap baris kode, diskusi strategi, hingga peluncuran sistem ke pengguna luas.
                 </p>
               </div>
@@ -214,14 +214,14 @@ export default function TentangKami() {
             <div>
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
                 <div>
-                  <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">
+                  <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide">
                     Para Penggerak
                   </span>
-                  <h2 className="text-3xl font-extrabold text-slate-900 mt-3">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
                     Tim Pimpinan &amp; Arsitek Utama
                   </h2>
                 </div>
-                <p className="text-slate-600 text-sm sm:text-base max-w-lg">
+                <p className="text-slate-600 text-sm max-w-lg">
                   Didukung oleh praktisi senior yang berpengalaman memimpin proyek teknologi berskala internasional dengan dedikasi penuh.
                 </p>
               </div>
@@ -241,7 +241,7 @@ export default function TentangKami() {
                         ex-Stripe
                       </div>
                     </div>
-                    <h3 className="font-bold text-lg text-slate-900">Elena Vance</h3>
+                    <h3 className="text-xl font-bold text-slate-900">Elena Vance</h3>
                     <p className="text-xs font-bold text-blue-600 mt-0.5">Chief Technology Officer</p>
                     <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
                       Memimpin arsitektur sistem terdistribusi bebas kendala, memastikan transaksi berskala masif berjalan stabil, aman, dan mulus.
@@ -267,7 +267,7 @@ export default function TentangKami() {
                         ex-AWS
                       </div>
                     </div>
-                    <h3 className="font-bold text-lg text-slate-900">Marcus Chen</h3>
+                    <h3 className="text-xl font-bold text-slate-900">Marcus Chen</h3>
                     <p className="text-xs font-bold text-sky-600 mt-0.5">VP Rekayasa Perangkat Lunak</p>
                     <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
                       Mengorkestrasi infrastruktur cloud modern dan klaster Kubernetes agar dapat melayani jutaan permintaan tanpa jeda sedikit pun.
@@ -293,7 +293,7 @@ export default function TentangKami() {
                         PhD Stanford
                       </div>
                     </div>
-                    <h3 className="font-bold text-lg text-slate-900">Dr. Sarah Al-Mansoor</h3>
+                    <h3 className="text-xl font-bold text-slate-900">Dr. Sarah Al-Mansoor</h3>
                     <p className="text-xs font-bold text-indigo-600 mt-0.5">Kepala Inovasi AI</p>
                     <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
                       Menghubungkan kecerdasan buatan terapan ke dalam operasional bisnis praktis, mulai dari pencarian semantik hingga model bahasa teroptimasi.
@@ -319,7 +319,7 @@ export default function TentangKami() {
                         CISSP Certified
                       </div>
                     </div>
-                    <h3 className="font-bold text-lg text-slate-900">David Thorne</h3>
+                    <h3 className="text-xl font-bold text-slate-900">David Thorne</h3>
                     <p className="text-xs font-bold text-emerald-700 mt-0.5">Kepala Keamanan Siber</p>
                     <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
                       Menjaga data klien dengan standar zero-trust, enkripsi menyeluruh, dan mitigasi proaktif terhadap potensi ancaman keamanan global.
@@ -340,13 +340,13 @@ export default function TentangKami() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div>
               <div className="text-center max-w-2xl mx-auto mb-14">
-                <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">
+                <span className="px-3.5 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold uppercase tracking-wide">
                   Jejak Langkah Kami
                 </span>
-                <h2 className="text-3xl font-extrabold text-slate-900 mt-3">
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">
                   Perjalanan Singkat CodeLens
                 </h2>
-                <p className="text-slate-600 mt-3 text-base">
+                <p className="text-slate-600 mt-3 text-sm">
                   Melihat ke belakang dengan rasa syukur dan melangkah ke depan dengan optimisme serta semangat inovasi tanpa henti.
                 </p>
               </div>
@@ -445,7 +445,7 @@ export default function TentangKami() {
                       <span className="material-symbols-outlined text-sm">sentiment_very_satisfied</span>
                       Budaya Kerja Inklusif &amp; Kolaboratif
                     </div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-snug">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">
                       Tumbuh dan Berkembang Bersama CodeLens
                     </h2>
                     <p className="mt-4 text-blue-100 text-sm sm:text-base leading-relaxed max-w-2xl">

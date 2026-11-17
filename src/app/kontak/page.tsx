@@ -27,7 +27,7 @@ const durations = [
       <section className="w-full pt-28 pb-16 lg:pt-24 lg:pb-28 bg-[#F8FAFF] overflow-hidden">
         <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
           <div className="w-full flex flex-col items-center" data-aos="fade-up">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-4">
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Respon Cepat Dalam 24 Jam
             </div>
@@ -258,7 +258,7 @@ const durations = [
           <div className="w-full flex flex-col items-center">
             <div className="w-full flex flex-col items-center mb-10" data-aos="fade-up">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-1">Bantuan &amp; Transparansi</span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Pertanyaan Umum (FAQ)</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pertanyaan Umum (FAQ)</h2>
               <p className="text-sm text-slate-600 mt-2">Semua hal penting yang sering ditanyakan sebelum memulai kolaborasi proyek.</p>
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">

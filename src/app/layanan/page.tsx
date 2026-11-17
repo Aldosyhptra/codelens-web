@@ -18,10 +18,10 @@ export default function Layanan() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Mitra Teknologi Terpercaya &amp; Andal
             </div>
-            <h1 className="text-xl sm:text-3xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
               Layanan &amp; Solusi <span className="text-blue-600">Rekayasa Perangkat Lunak</span>
             </h1>
-            <p className="mt-6 text-md sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Kami merancang, membangun, dan mengoptimalkan sistem digital yang andal, aman, dan mudah digunakan untuk pertumbuhan bisnis Anda.
             </p>
             <div className="w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-6 md:mt-12" data-aos="zoom-in" data-aos-delay="400">
@@ -54,9 +54,9 @@ export default function Layanan() {
           <div className="w-full px-4 md:px-8 flex flex-col items-center">
             <div className="w-full">
               <div className="text-center w-full max-w-2xl mb-16 mx-auto">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest border border-blue-200">Solusi Komprehensif</span>
-                <h2 className="text-3xl font-bold text-slate-900 tracking-tight mt-3">4 Layanan Utama CodeLens</h2>
-                <p className="text-slate-600 mt-3 text-base">Dirancang khusus untuk membantu transformasi digital perusahaan dengan metode rekayasa modern yang teruji dan efisien.</p>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold uppercase tracking-wide border border-blue-200">Solusi Komprehensif</span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">4 Layanan Utama CodeLens</h2>
+                <p className="text-slate-600 mt-3 text-sm">Dirancang khusus untuk membantu transformasi digital perusahaan dengan metode rekayasa modern yang teruji dan efisien.</p>
               </div>
               <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto ">
                 <div className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
@@ -148,25 +148,25 @@ export default function Layanan() {
           <div className="w-full px-4 md:px-8 flex flex-col items-center">
             <div className="w-full">
               <div className="text-center w-full max-w-2xl mb-16 mx-auto">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest border border-blue-200">Alur Kolaborasi</span>
-                <h2 className="text-3xl font-bold text-slate-900 tracking-tight mt-3">Metodologi Kerja yang Jelas &amp; Terbuka</h2>
-                <p className="text-slate-600 mt-3 text-base">Setiap proyek dikelola dengan transparansi penuh dari awal hingga selesai, memastikan hasil selesai tepat waktu tanpa kejutan biaya.</p>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold uppercase tracking-wide border border-blue-200">Alur Kolaborasi</span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">Metodologi Kerja yang Jelas &amp; Terbuka</h2>
+                <p className="text-slate-600 mt-3 text-sm">Setiap proyek dikelola dengan transparansi penuh dari awal hingga selesai, memastikan hasil selesai tepat waktu tanpa kejutan biaya.</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="zoom-in">
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-blue-300 transition-colors" data-aos="fade-up" data-aos-delay="100">
-                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">01</div><h3 className="text-lg font-bold text-slate-900 mb-2">Konsultasi &amp; Analisis</h3><p className="text-slate-600 text-sm leading-relaxed">Kami mendengarkan target bisnis Anda, mengevaluasi sistem yang sedang berjalan, dan memetakan kebutuhan fitur yang paling esensial.</p></div>
+                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">01</div><h3 className="text-xl font-bold text-slate-900 mb-2">Konsultasi &amp; Analisis</h3><p className="text-slate-600 text-sm leading-relaxed">Kami mendengarkan target bisnis Anda, mengevaluasi sistem yang sedang berjalan, dan memetakan kebutuhan fitur yang paling esensial.</p></div>
                   <div className="mt-6 pt-4 border-t border-slate-200/60"><span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span><span className="text-xs text-blue-700 font-medium bg-blue-50 px-2 py-1 rounded inline-block">Dokumen Spesifikasi &amp; Timeline</span></div>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-blue-300 transition-colors" data-aos="fade-up" data-aos-delay="150">
-                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">02</div><h3 className="text-lg font-bold text-slate-900 mb-2">Perancangan &amp; Prototipe</h3><p className="text-slate-600 text-sm leading-relaxed">Membuat desain antarmuka interaktif (UI/UX) dan blueprint struktur teknis yang dapat Anda uji sebelum penulisan kode dimulai.</p></div>
+                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">02</div><h3 className="text-xl font-bold text-slate-900 mb-2">Perancangan &amp; Prototipe</h3><p className="text-slate-600 text-sm leading-relaxed">Membuat desain antarmuka interaktif (UI/UX) dan blueprint struktur teknis yang dapat Anda uji sebelum penulisan kode dimulai.</p></div>
                   <div className="mt-6 pt-4 border-t border-slate-200/60"><span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span><span className="text-xs text-blue-700 font-medium bg-blue-50 px-2 py-1 rounded inline-block">Prototipe Desain &amp; Arsitektur</span></div>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-blue-300 transition-colors" data-aos="fade-up" data-aos-delay="200">
-                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">03</div><h3 className="text-lg font-bold text-slate-900 mb-2">Pembangunan &amp; Pengujian</h3><p className="text-slate-600 text-sm leading-relaxed">Pengembangan perangkat lunak dengan update berkala setiap 2 minggu serta pengujian ketat fungsi dan keamanan sebelum perilisan.</p></div>
+                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">03</div><h3 className="text-xl font-bold text-slate-900 mb-2">Pembangunan &amp; Pengujian</h3><p className="text-slate-600 text-sm leading-relaxed">Pengembangan perangkat lunak dengan update berkala setiap 2 minggu serta pengujian ketat fungsi dan keamanan sebelum perilisan.</p></div>
                   <div className="mt-6 pt-4 border-t border-slate-200/60"><span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span><span className="text-xs text-blue-700 font-medium bg-blue-50 px-2 py-1 rounded inline-block">Demo Rutin &amp; Laporan Uji QA</span></div>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 relative flex flex-col justify-between hover:border-blue-300 transition-colors" data-aos="fade-up" data-aos-delay="250">
-                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">04</div><h3 className="text-lg font-bold text-slate-900 mb-2">Peluncuran &amp; Dukungan</h3><p className="text-slate-600 text-sm leading-relaxed">Peluncuran sistem ke lingkungan produksi tanpa gangguan, transfer dokumentasi lengkap ke tim Anda, serta garansi pemeliharaan berkala.</p></div>
+                  <div><div className="w-10 h-10 rounded-xl bg-blue-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-mono shadow-sm">04</div><h3 className="text-xl font-bold text-slate-900 mb-2">Peluncuran &amp; Dukungan</h3><p className="text-slate-600 text-sm leading-relaxed">Peluncuran sistem ke lingkungan produksi tanpa gangguan, transfer dokumentasi lengkap ke tim Anda, serta garansi pemeliharaan berkala.</p></div>
                   <div className="mt-6 pt-4 border-t border-slate-200/60"><span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">Hasil Fase:</span><span className="text-xs text-blue-700 font-medium bg-blue-50 px-2 py-1 rounded inline-block">Sistem Live &amp; Serah Terima IP</span></div>
                 </div>
               </div>
@@ -179,9 +179,9 @@ export default function Layanan() {
           <div className="w-full px-4 md:px-8 flex flex-col items-center">
             <div className="w-full">
               <div className="text-center w-full max-w-2xl mb-16 mx-auto">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest border border-blue-200">Model Kolaborasi</span>
-                <h2 className="text-3xl font-bold text-slate-900 tracking-tight mt-3">Pilihan Kerjasama yang Fleksibel</h2>
-                <p className="text-slate-600 mt-3 text-base">Sesuaikan skema kolaborasi dengan kebutuhan spesifik, ukuran tim internal, dan anggaran investasi digital perusahaan Anda.</p>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold uppercase tracking-wide border border-blue-200">Model Kolaborasi</span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">Pilihan Kerjasama yang Fleksibel</h2>
+                <p className="text-slate-600 mt-3 text-sm">Sesuaikan skema kolaborasi dengan kebutuhan spesifik, ukuran tim internal, dan anggaran investasi digital perusahaan Anda.</p>
               </div>
               <div className="flex flex-wrap gap-8 items-center justify-center">
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border-2 border-blue-600/30 shadow-lg relative flex flex-col justify-between hover:shadow-xl transition-shadow" data-aos="zoom-in" data-aos-delay="100">
@@ -266,23 +266,23 @@ export default function Layanan() {
                 <div className="absolute -right-16 -top-16 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
                 <div className="w-full max-w-3xl relative z-10 mb-12">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-blue-200 text-xs font-semibold tracking-wider uppercase mb-4"><span className="material-symbols-outlined text-sm">verified</span> Komitmen Kontraktual</div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">Jaminan Kualitas &amp; Standar Layanan</h2>
+                  <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Jaminan Kualitas &amp; Standar Layanan</h2>
                   <p className="text-slate-300 mt-3 text-base leading-relaxed">Kami percaya bahwa kepercayaan bisnis dibangun di atas transparansi dan akuntabilitas. Setiap kerjasama dilindungi oleh perjanjian resmi yang mengikat.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
                     <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">speed</span></div>
-                    <h3 className="text-lg font-bold mb-2">Service Level Agreement (SLA)</h3>
+                    <h3 className="text-xl font-bold mb-2">Service Level Agreement (SLA)</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Jaminan ketersediaan sistem hingga 99.9% dan respons darurat teknis di bawah 1 jam untuk memastikan operasional bisnis berjalan normal.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
                     <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">lock</span></div>
-                    <h3 className="text-lg font-bold mb-2">Kepatuhan Keamanan Data</h3>
+                    <h3 className="text-xl font-bold mb-2">Kepatuhan Keamanan Data</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Penerapan enkripsi standar industri, penandatanganan Perjanjian Kerahasiaan (NDA), dan kepatuhan terhadap regulasi perlindungan data pribadi.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
                     <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">key</span></div>
-                    <h3 className="text-lg font-bold mb-2">100% Kepemilikan Kode Sumber</h3>
+                    <h3 className="text-xl font-bold mb-2">100% Kepemilikan Kode Sumber</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Seluruh hak cipta kode program, aset desain, dan dokumentasi arsitektur sepenuhnya diserahkan menjadi aset sah perusahaan Anda.</p>
                   </div>
                 </div>

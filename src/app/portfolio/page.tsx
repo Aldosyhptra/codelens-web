@@ -118,25 +118,25 @@ export default function PortfolioPage() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Rekam Jejak Solusi Nyata
             </div>
-            <h1 className="text-xl sm:text-3xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
               Portofolio &amp; Studi Kasus <span className="text-blue-600">Nyata</span>
             </h1>
-            <p className="mt-6 text-md sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Pelajari bagaimana kami membantu berbagai perusahaan menyelesaikan tantangan teknologi.
             </p>
             <div className="w-full flex flex-wrap justify-center items-center gap-6 sm:gap-12 pt-4">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">50+</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">50+</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Sistem Enterprise Selesai</div>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block" />
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">99.99%</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">99.99%</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Rata-rata Uptime Produksi</div>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block" />
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">4x Lipat</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">4x Lipat</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Peningkatan Efisiensi Rata-rata</div>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function PortfolioPage() {
               <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center relative z-10">
                 <div className="lg:col-span-7 w-full space-y-6">
                   <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">{featured.badge}</span>
+                    <span className="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-semibold uppercase tracking-wide whitespace-nowrap">{featured.badge}</span>
                     <span className="px-3 py-1 rounded-full text-blue-600 bg-blue-50 text-xs font-semibold whitespace-nowrap">{featured.tag}</span>
                   </div>
                   <div className="space-y-3">
@@ -233,7 +233,7 @@ export default function PortfolioPage() {
           <div className="w-full">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
               <div>
-                <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">Katalog Portofolio Pilihan</h3>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Katalog Portofolio Pilihan</h2>
                 <p className="text-slate-600 text-sm mt-1">Implementasi solusi modern yang teruji di berbagai sektor industri.</p>
               </div>
             </div>
@@ -282,7 +282,7 @@ export default function PortfolioPage() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Perbandingan Dampak Kerja Nyata</span>
-                <h3 className="text-2xl font-extrabold text-slate-900 mt-1">Sebelum &amp; Sesudah Bersama CodeLens</h3>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Sebelum &amp; Sesudah Bersama CodeLens</h2>
                 <p className="text-sm text-slate-600 mt-0.5">Perubahan terukur yang dialami oleh mitra teknologi kami.</p>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100 self-start sm:self-auto">
@@ -329,7 +329,7 @@ export default function PortfolioPage() {
                 <span className="material-symbols-outlined text-sm">handshake</span>
                 Kolaborasi Rekayasa Digital
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-snug">Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.</h2>
               <p className="text-blue-100 text-sm md:text-base leading-relaxed">Diskusikan kebutuhan aplikasi, platform, atau pembaruan infrastruktur Anda.</p>
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-blue-800 hover:bg-blue-50 font-bold text-sm text-center shadow-lg transition-all flex items-center justify-center gap-2">
