@@ -13,9 +13,9 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
           <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
-            <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center" data-aos="zoom-in">
+            <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               {/* Teks Hero */}
-              <div className="lg:col-span-7 text-center lg:text-left">
+              <div className="lg:col-span-7 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-6" >
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300">
+                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
@@ -121,7 +121,7 @@ export default function Home() {
                 { icon: "workspace_premium", value: "10+ Tahun", title: "Pengalaman Industri", desc: "Praktik rekayasa digital berstandar" },
                 { icon: "security", value: "100%", title: "Keamanan Terjamin", desc: "Sertifikasi &amp; kepatuhan privasi data" },
               ].map((item, i) => (
-                <div key={item.title} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="zoom-in" data-aos-delay={i * 150}>
+                <div key={item.title} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
                     <span className="material-symbols-outlined text-2xl">{item.icon}</span>
                   </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 { icon: "hub", name: "OCTANE SISTEM" },
                 { icon: "cloud", name: "SYNAPSE CLOUD" },
               ].map((partner) => (
-                <div key={partner.name} className="flex items-center gap-2 text-slate-700 font-bold text-md md:text-lg" data-aos="zoom-in">
+                <div key={partner.name} className="flex items-center gap-2 text-slate-700 font-bold text-md md:text-lg" data-aos="fade-up">
                   <span className="material-symbols-outlined text-blue-600">{partner.icon}</span>
                   {partner.name}
                 </div>
@@ -172,7 +172,7 @@ export default function Home() {
                 { icon: "psychology", title: "Integrasi Kecerdasan Buatan (AI)", desc: "Penerapan model bahasa cerdas (LLM), chatbot asisten pintar, otomasi dokumen, serta pemrosesan analitik prediktif untuk efisiensi tim Anda.", tags: ["Solusi AI Sesuai Kebutuhan Bisnis", "Otomasi Layanan Pelanggan Cerdas"] },
                 { icon: "verified_user", title: "Keamanan Sistem &amp; Pemeliharaan", desc: "Audit keamanan menyeluruh, proteksi celah kerentanan data, serta pemeliharaan berkala untuk menjaga stabilitas sistem tetap 100% prima.", tags: ["Audit Celah &amp; Enkripsi Data", "Pemantauan Proaktif 24 Jam"] },
               ].map((service, i) => (
-                <div key={service.title} className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md hover:border-blue-300 transition-all flex flex-col justify-between group" data-aos="zoom-in" data-aos-delay={i * 200}>
+                <div key={service.title} className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div>
                     <div className="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
                       <span className="material-symbols-outlined text-3xl">{service.icon}</span>
@@ -225,7 +225,7 @@ export default function Home() {
                   metrics: [{ value: "8.5 Detik", label: "Kecepatan Analisis" }, { value: "100%", label: "Privasi Terjaga" }, { value: "99.8%", label: "Akurasi Sistem" }],
                 },
               ].map((caseStudy, i) => (
-                <div key={caseStudy.title} className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay={i * 200}>
+                <div key={caseStudy.title} className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div>
                     <div className="w-full h-56 rounded-2xl overflow-hidden mb-6 bg-slate-100 relative">
                       <Image alt={caseStudy.title} className="w-full h-full object-cover" src={caseStudy.image} width={800} height={400} />

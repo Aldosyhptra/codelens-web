@@ -38,7 +38,7 @@ export default function TentangKami() {
                   </div>
                 </div>
                 <div className="lg:col-span-6">
-                  <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xl shadow-slate-100 space-y-4" data-aos="zoom-in" data-aos-delay="300">
+                  <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xl shadow-slate-100 space-y-4" data-aos="fade-up" data-aos-delay="300">
                     <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                       <div className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-blue-600">verified</span>
@@ -75,7 +75,7 @@ export default function TentangKami() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="zoom-in" data-aos-delay="100">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-2xl">favorite</span>
                   </div>
@@ -84,7 +84,7 @@ export default function TentangKami() {
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">Teknologi mutakhir harus melayani manusia dengan kehangatan dan kemudahan akses nyata.</p>
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="zoom-in" data-aos-delay="200">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-2xl">architecture</span>
                   </div>
@@ -93,7 +93,7 @@ export default function TentangKami() {
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">Kekuatan fondasi sistem dirancang tahan uji beban tinggi dan minim gangguan teknis.</p>
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="zoom-in" data-aos-delay="300">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
                   <div className="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
                     <span className="material-symbols-outlined text-2xl">support_agent</span>
                   </div>
@@ -123,7 +123,7 @@ export default function TentangKami() {
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all" data-aos="zoom-in" data-aos-delay="100">
+                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-blue-100/70 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
                       <span className="material-symbols-outlined text-2xl">verified_user</span>
@@ -143,7 +143,7 @@ export default function TentangKami() {
                     <span className="text-blue-600 font-bold">&ge; 92% Bebas Cacat</span>
                   </div>
                 </div>
-                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all" data-aos="zoom-in" data-aos-delay="200">
+                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-sky-100/70 text-sky-600 flex items-center justify-center group-hover:bg-sky-600 group-hover:text-white transition-colors">
                       <span className="material-symbols-outlined text-2xl">forum</span>
@@ -163,7 +163,7 @@ export default function TentangKami() {
                     <span className="text-sky-600 font-bold">Akses Repositori &amp; Demo Harian</span>
                   </div>
                 </div>
-                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all" data-aos="zoom-in" data-aos-delay="300">
+                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-indigo-100/70 text-indigo-600 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                       <span className="material-symbols-outlined text-2xl">sentiment_satisfied</span>
@@ -183,7 +183,7 @@ export default function TentangKami() {
                     <span className="text-indigo-600 font-bold">Aksesibilitas &amp; Kemudahan</span>
                   </div>
                 </div>
-                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all" data-aos="zoom-in" data-aos-delay="400">
+                <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-teal-100/70 text-teal-700 flex items-center justify-center group-hover:bg-teal-700 group-hover:text-white transition-colors">
                       <span className="material-symbols-outlined text-2xl">psychology</span>
@@ -227,7 +227,7 @@ export default function TentangKami() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
                 {/* Team Member 1 */}
-                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group" data-aos="zoom-in" data-aos-delay="100">
+                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div>
                     <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-slate-100">
                       <Image
@@ -253,7 +253,7 @@ export default function TentangKami() {
                   </div>
                 </div>
                 {/* Team Member 2 */}
-                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group" data-aos="zoom-in" data-aos-delay="200">
+                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div>
                     <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-slate-100">
                       <Image
@@ -279,7 +279,7 @@ export default function TentangKami() {
                   </div>
                 </div>
                 {/* Team Member 3 */}
-                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group" data-aos="zoom-in" data-aos-delay="300">
+                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
                   <div>
                     <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-slate-100">
                       <Image
@@ -305,7 +305,7 @@ export default function TentangKami() {
                   </div>
                 </div>
                 {/* Team Member 4 */}
-                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group" data-aos="zoom-in" data-aos-delay="400">
+                <div className="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div>
                     <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-4 bg-slate-100">
                       <Image
@@ -351,7 +351,7 @@ export default function TentangKami() {
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative" data-aos="zoom-in" data-aos-delay="100">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all relative hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-xs">
                     01
                   </div>
@@ -370,7 +370,7 @@ export default function TentangKami() {
                     4 Anggota Pendiri
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative" data-aos="zoom-in" data-aos-delay="200">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all relative hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center font-bold text-xs">
                     02
                   </div>
@@ -389,7 +389,7 @@ export default function TentangKami() {
                     32 Rekan Pengembang
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative" data-aos="zoom-in" data-aos-delay="300">
+                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all relative hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
                   <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-xs">
                     03
                   </div>
@@ -408,7 +408,7 @@ export default function TentangKami() {
                     85+ Talenta Global
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border-2 border-blue-600/40 shadow-md shadow-blue-500/5 flex flex-col justify-between relative" data-aos="zoom-in" data-aos-delay="400">
+                <div className="bg-white p-6 rounded-2xl border-2 border-blue-600/40 shadow-md shadow-blue-500/5 flex flex-col justify-between relative" data-aos="fade-up" data-aos-delay="200">
                   <div className="absolute top-6 right-6 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
                     04
                   </div>

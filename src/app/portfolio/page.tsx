@@ -162,7 +162,7 @@ export default function PortfolioPage() {
       {filteredCaseStudies.filter((cs) => cs.isFeatured).map((featured) => (
         <section key={featured.id} className="w-full py-10" data-aos="fade-up">
           <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
-            <article className="w-full rounded-3xl bg-white border border-blue-100 p-6 sm:p-8 md:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden transition-all" data-aos="zoom-in">
+            <article className="w-full rounded-3xl bg-white border border-blue-100 p-6 sm:p-8 md:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden transition-all" data-aos="fade-up">
               <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 md:w-72 md:h-72 bg-blue-50 rounded-full blur-3xl pointer-events-none" />
               <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center relative z-10">
                 <div className="lg:col-span-7 w-full space-y-6">
@@ -239,7 +239,7 @@ export default function PortfolioPage() {
             </div>
             <div className="w-full flex flex-wrap gap-6 items-center justify-center">
               {filteredCaseStudies.filter((cs) => !cs.isFeatured).map((cs, i) => (
-                <article key={cs.id} className="max-w-md flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group" data-aos="zoom-in" data-aos-delay={i * 150}>
+                <article key={cs.id} className="max-w-md flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className="w-full space-y-5">
                     <div className="relative w-full h-56 rounded-2xl overflow-hidden bg-slate-100">
                       <Image alt={cs.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={cs.image} width={800} height={400} />
@@ -323,7 +323,7 @@ export default function PortfolioPage() {
 
       <section className="w-full py-10 md:pt-10 bg-transparent" id="kontak">
         <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
-          <div className="w-full max-w-5xl rounded-3xl bg-linear-to-r from-blue-700 via-blue-800 to-indigo-800 p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-xl" data-aos="zoom-in">
+          <div className="w-full max-w-5xl rounded-3xl bg-linear-to-r from-blue-700 via-blue-800 to-indigo-800 p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-xl" data-aos="fade-up">
             <div className="w-full max-w-2xl space-y-4 relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-semibold">
                 <span className="material-symbols-outlined text-sm">handshake</span>

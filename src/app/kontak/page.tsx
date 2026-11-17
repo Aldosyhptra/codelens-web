@@ -197,14 +197,14 @@ const durations = [
                         { time: "Lusa, 11:00 WIB", status: "Slot Tersedia" },
                         { time: "Lusa, 15:00 WIB", status: "Slot Tersedia" },
                       ].map((slot, i) => (
-                        <button key={i} className="p-2.5 rounded-xl border border-slate-200 text-left hover:border-blue-500 hover:bg-blue-50/50 transition-all cursor-pointer" type="button" data-aos="fade-up" data-aos-delay={300 + i * 100}>
+                        <button key={i} className="p-2.5 rounded-xl border border-slate-200 text-left hover:border-blue-500 hover:bg-blue-50/50 transition-all cursor-pointer" type="button" data-aos="fade-up" data-aos-delay={i * 100}>
                           <span className="text-xs font-bold text-slate-800 block">{slot.time}</span>
                           <span className="text-[11px] text-blue-600 font-medium">{slot.status}</span>
                         </button>
                       ))}
                     </div>
                   </div>
-                  <button className="w-full py-2.5 px-4 rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer" type="button" data-aos="fade-up" data-aos-delay="700">
+                  <button className="w-full py-2.5 px-4 rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer" type="button" data-aos="fade-up" data-aos-delay="300">
                     <span className="material-symbols-outlined text-base">calendar_month</span>
                     Buka Kalender Online Lengkap
                   </button>
@@ -267,7 +267,7 @@ const durations = [
                 { icon: "health_and_safety", iconBg: "bg-emerald-50", iconColor: "text-emerald-600", title: "Garansi Setelah Rilis", desc: "Kami menyertakan garansi perbaikan bug dan pendampingan stabilitas server tanpa biaya tambahan hingga 3 bulan penuh pasca peluncuran resmi." },
                 { icon: "sync_saved_locally", iconBg: "bg-amber-50", iconColor: "text-amber-600", title: "Proses Revisi & Pelaporan", desc: "Pengembangan dilakukan secara berkala (Agile/Sprint dua mingguan). Anda memiliki kontrol penuh untuk mengevaluasi dan mengajukan penyelarasan di setiap fase." },
               ].map((faq, i) => (
-                <div key={faq.title} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay={i * 150}>
+                <div key={faq.title} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className={`w-9 h-9 rounded-xl ${faq.iconBg} ${faq.iconColor} flex items-center justify-center mb-4`}>
                     <span className="material-symbols-outlined text-xl">{faq.icon}</span>
                   </div>
