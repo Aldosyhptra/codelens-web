@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import Icon from "@/components/Icon";
 export const metadata = {
   title: "Beranda — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -29,24 +30,24 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-lg shadow-blue-600/20 hover:scale-[1.01] transition-all">
                     <span>Konsultasi Gratis</span>
-                    <span className="material-symbols-outlined text-xl">arrow_forward</span>
+                    <Icon name="arrow_forward" className="text-xl" />
                   </a>
                   <a href="#studi-kasus" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-blue-600 hover:border-blue-300 hover:bg-blue-50/40 font-semibold text-base transition-all shadow-sm">
-                    <span className="material-symbols-outlined text-blue-600 text-xl">folder_open</span>
+                    <Icon name="folder_open" className="text-blue-600 text-xl" />
                     <span>Lihat Hasil Karya</span>
                   </a>
                 </div>
                 <div className="pt-5 mt-5 border-t border-slate-200/70 flex flex-wrap justify-center items-center md:items-center gap-4 text-slate-600 text-sm">
                   <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-blue-600 text-lg">verified</span>
+                    <Icon name="verified" className="text-blue-600 text-lg" />
                     <span className="font-medium">Standar Kualitas Tertinggi</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-blue-600 text-lg">speed</span>
+                    <Icon name="speed" className="text-blue-600 text-lg" />
                     <span className="font-medium">Performa Cepat Ringan</span>
                   </div>
                   <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
-                    <span className="material-symbols-outlined text-blue-600 text-lg">lock</span>
+                    <Icon name="lock" className="text-blue-600 text-lg" />
                     <span className="font-medium">Privasi Data Terlindungi</span>
                   </div>
                 </div>
@@ -56,10 +57,10 @@ export default function Home() {
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
-                        <span className="material-symbols-outlined">insights</span>
+                        <Icon name="insights" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-slate-900 text-base">Status Sistem Layanan</h3>
+                        <h2 className="font-bold text-slate-900 text-base">Status Sistem Layanan</h2>
                         <p className="text-xs text-slate-500">Pemantauan Waktu Nyata</p>
                       </div>
                     </div>
@@ -100,7 +101,7 @@ export default function Home() {
                   </div>
                   <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
                     <span className="flex items-center gap-1.5">
-                      <span className="material-symbols-outlined text-blue-600 text-sm">support_agent</span>
+                      <Icon name="support_agent" className="text-blue-600 text-sm" />
                       Dukungan Ahli 24/7
                     </span>
                     <span className="font-medium text-slate-700">Audit Arsitektur Lengkap</span>
@@ -123,7 +124,7 @@ export default function Home() {
               ].map((item, i) => (
                 <div key={item.title} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
-                    <span className="material-symbols-outlined text-2xl">{item.icon}</span>
+                    <Icon name={item.icon} className="text-2xl" />
                   </div>
                   <p className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600 tracking-tight">{item.value}</p>
                   <p className="text-sm md:text-lg font-bold text-slate-900 mt-1">{item.title}</p>
@@ -146,8 +147,8 @@ export default function Home() {
                 { icon: "hub", name: "OCTANE SISTEM" },
                 { icon: "cloud", name: "SYNAPSE CLOUD" },
               ].map((partner) => (
-                <div key={partner.name} className="flex items-center gap-2 text-slate-700 font-bold text-md md:text-lg" data-aos="fade-up">
-                  <span className="material-symbols-outlined text-blue-600">{partner.icon}</span>
+                <div key={partner.name} className="flex items-center gap-2 text-slate-700 font-bold text-base md:text-lg" data-aos="fade-up">
+                  <Icon name={partner.icon} className="text-blue-600" />
                   {partner.name}
                 </div>
               ))}
@@ -175,7 +176,7 @@ export default function Home() {
                 <div key={service.title} className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div>
                     <div className="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                      <span className="material-symbols-outlined text-3xl">{service.icon}</span>
+                      <Icon name={service.icon} className="text-3xl" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">{service.title}</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6 text-justify md:text-start">{service.desc}</p>
@@ -183,7 +184,7 @@ export default function Home() {
                   <ul className="text-xs text-slate-500 space-y-2 pt-4 border-t border-slate-100">
                     {service.tags.map((tag) => (
                       <li key={tag} className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-blue-600 text-base">check_circle</span>
+                        <Icon name="check_circle" className="text-blue-600 text-base" />
                         <span>{tag}</span>
                       </li>
                     ))}
@@ -205,7 +206,7 @@ export default function Home() {
               </div>
               <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-700 transition-colors mt-4 md:mt-0 text-sm">
                 <span>Pelajari Semua Studi Kasus</span>
-                <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                <Icon name="arrow_forward" className="text-lg" />
               </a>
             </div>
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 xl:px-5">
@@ -255,7 +256,7 @@ export default function Home() {
               <div className="flex-1">
                 <div className="flex items-center gap-1 text-amber-400 mb-4">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" as string }}>star</span>
+                    <Icon key={i} name="star" />
                   ))}
                   <span className="ml-2 text-xs font-bold text-blue-600 uppercase tracking-wider">Testimoni Klien Terverifikasi</span>
                 </div>
@@ -271,7 +272,7 @@ export default function Home() {
                   <Image alt="Foto Direktur Teknologi yang memberikan ulasan" className="w-full h-full object-cover" src="/images/beranda/1.jpg" width={200} height={200} />
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold">
-                  <span className="material-symbols-outlined text-sm">verified</span>
+                  <Icon name="verified" className="text-sm" />
                   Mitra Resmi
                 </span>
               </div>
@@ -295,7 +296,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
                   <a href="/kontak#jadwal-cto" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-blue-700 font-bold text-base hover:bg-blue-50 shadow-lg hover:scale-[1.02] transition-all">
                     <span>Jadwalkan Konsultasi Sekarang</span>
-                    <span className="material-symbols-outlined text-xl">calendar_today</span>
+                    <Icon name="calendar_today" className="text-xl" />
                   </a>
                   <a href="/layanan" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-blue-800/60 border border-white/20 text-white font-semibold text-base hover:bg-blue-800 transition-all">
                     <span>Lihat Layanan Kami</span>

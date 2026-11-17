@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
+import Icon from "@/components/Icon";
 const caseStudies = [
   {
     id: "novaPay",
@@ -184,7 +185,7 @@ export default function PortfolioPage() {
                     ))}
                   </div>
                   <div className="w-full p-5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-4">
-                    <span className="material-symbols-outlined text-blue-600 text-2xl shrink-0 mt-0.5">format_quote</span>
+                    <Icon name="format_quote" className="text-blue-600 text-2xl shrink-0 mt-0.5" />
                     <div className="space-y-1">
                       <p className="text-sm text-slate-700 italic">&ldquo;{featured.clientQuote}&rdquo;</p>
                       <div className="text-xs font-semibold text-blue-600">{featured.clientName}</div>
@@ -204,19 +205,19 @@ export default function PortfolioPage() {
                       {featured.systemSteps?.map((step) => (
                         <div key={step.icon} className="w-full p-3 bg-white rounded-xl border border-slate-200 flex items-center justify-between gap-2 shadow-sm">
                           <div className="flex items-center gap-2 min-w-0">
-                            <span className="material-symbols-outlined text-blue-600 text-lg shrink-0">{step.icon}</span>
+                            <Icon name={step.icon} className="text-blue-600 text-lg shrink-0" />
                             <span className="font-medium text-slate-800 truncate">{step.label}</span>
                           </div>
                           <span className={`font-semibold shrink-0 whitespace-nowrap ${step.statusColor}`}>{step.status}</span>
                         </div>
                       ))}
                       <div className="w-full flex justify-center text-slate-400">
-                        <span className="material-symbols-outlined text-base">arrow_downward</span>
+                        <Icon name="arrow_downward" className="text-base" />
                       </div>
                     </div>
                     <div className="w-full pt-2 text-center">
                       <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500">
-                        <span className="material-symbols-outlined text-sm text-emerald-500">check_circle</span>
+                        <Icon name="check_circle" className="text-sm text-emerald-500" />
                         Telah diuji pada 50.000 transaksi bersamaan per detik
                       </span>
                     </div>
@@ -246,7 +247,7 @@ export default function PortfolioPage() {
                       <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-semibold shadow-sm">{cs.tag}</span>
                     </div>
                     <div className="w-full space-y-2">
-                      <h4 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">{cs.title}</h4>
+                      <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">{cs.title}</h3>
                       <p className="text-sm text-slate-600 leading-relaxed">{cs.desc}</p>
                     </div>
                     <div className="w-full grid grid-cols-2 gap-3 p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
@@ -266,7 +267,7 @@ export default function PortfolioPage() {
                   <div className="w-full pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
                     <span className="text-xs text-slate-500 font-medium">Studi Kasus Teruji</span>
                     <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-1 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
-                      Pelajari <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Pelajari <Icon name="arrow_forward" className="text-sm" />
                     </a>
                   </div>
                 </article>
@@ -286,7 +287,7 @@ export default function PortfolioPage() {
                 <p className="text-sm text-slate-600 mt-0.5">Perubahan terukur yang dialami oleh mitra teknologi kami.</p>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100 self-start sm:self-auto">
-                <span className="material-symbols-outlined text-base">assessment</span>
+                <Icon name="assessment" className="text-base" />
                 Data Rata-Rata Seluruh Proyek
               </div>
             </div>
@@ -305,7 +306,7 @@ export default function PortfolioPage() {
                     <tr key={row.label} className="hover:bg-slate-50/70 transition-colors">
                       <td className="py-4 px-2 font-bold text-slate-900 flex items-center gap-2.5">
                         <span className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-lg">{row.icon}</span>
+                          <Icon name={row.icon} className="text-lg" />
                         </span>
                         {row.label}
                       </td>
@@ -326,18 +327,18 @@ export default function PortfolioPage() {
           <div className="w-full max-w-5xl rounded-3xl bg-linear-to-r from-blue-700 via-blue-800 to-indigo-800 p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-xl" data-aos="fade-up">
             <div className="w-full max-w-2xl space-y-4 relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-semibold">
-                <span className="material-symbols-outlined text-sm">handshake</span>
+                <Icon name="handshake" className="text-sm" />
                 Kolaborasi Rekayasa Digital
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.</h2>
               <p className="text-blue-100 text-sm md:text-base leading-relaxed">Diskusikan kebutuhan aplikasi, platform, atau pembaruan infrastruktur Anda.</p>
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-blue-800 hover:bg-blue-50 font-bold text-sm text-center shadow-lg transition-all flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-lg">calendar_today</span>
+                  <Icon name="calendar_today" className="text-lg" />
                   Jadwalkan Konsultasi Gratis
                 </a>
                 <a href="#" className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm text-center transition-all flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-lg">chat</span>
+                  <Icon name="chat" className="text-lg" />
                   Chat WhatsApp Tim Ahli
                 </a>
               </div>
@@ -345,6 +346,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

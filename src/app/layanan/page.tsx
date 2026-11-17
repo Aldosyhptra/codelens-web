@@ -1,5 +1,5 @@
-import Image from "next/image";
 
+import Icon from "@/components/Icon";
 export const metadata = {
   title: "Layanan — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -62,80 +62,80 @@ export default function Layanan() {
                 <div className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div>
                     <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
-                      <span className="material-symbols-outlined text-3xl">devices</span>
+                      <Icon name="devices" className="text-3xl" />
                     </div>
                     <div className="inline-block text-xs font-semibold text-blue-600 tracking-wide uppercase mb-1">Modern, Responsif &amp; Cepat</div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Pengembangan Aplikasi Web &amp; Mobile</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6">Membangun antarmuka modern yang nyaman dipakai oleh pelanggan maupun tim internal Anda. Desain responsif, performa cepat, dan bebas kendala teknis pada platform iOS, Android, maupun peramban web.</p>
                     <div className="space-y-2.5 pt-4 border-t border-slate-100">
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Aplikasi Web interaktif berperforma tinggi (Next.js, React, Node.js)</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Aplikasi Mobile cross-platform mulus untuk Android &amp; iOS</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Pengalaman pengguna (UX/UI) yang intuitif dan mudah dipelajari</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Aplikasi Web interaktif berperforma tinggi (Next.js, React, Node.js)</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Aplikasi Mobile cross-platform mulus untuk Android &amp; iOS</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Pengalaman pengguna (UX/UI) yang intuitif dan mudah dipelajari</span></div>
                     </div>
                   </div>
                   <div className="mt-8 pt-4 md:flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Standar Aksesibilitas WCAG &amp; SEO Friendly</span>
-                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><Icon name="arrow_forward" className="text-base" /></a>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div>
                     <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
-                      <span className="material-symbols-outlined text-3xl">cloud_sync</span>
+                      <Icon name="cloud_sync" className="text-3xl" />
                     </div>
                     <div className="inline-block text-xs font-semibold text-blue-600 tracking-wide uppercase mb-1">Efisien, Skalabel &amp; Hemat Biaya</div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Transformasi Cloud &amp; Modernisasi Sistem</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6">Memperbarui infrastruktur dan aplikasi lama agar berjalan di ekosistem cloud modern. Mengurangi biaya operasional server bulanan dan mencegah server down saat lonjakan pengunjung.</p>
                     <div className="space-y-2.5 pt-4 border-t border-slate-100">
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Migrasi aman ke AWS, Google Cloud, atau Microsoft Azure</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Otomasi alur kerja rilis cepat (CI/CD) tanpa gangguan operasional</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Optimasi kapasitas server otomatis sesuai kebutuhan beban kerja nyata</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Migrasi aman ke AWS, Google Cloud, atau Microsoft Azure</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Otomasi alur kerja rilis cepat (CI/CD) tanpa gangguan operasional</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Optimasi kapasitas server otomatis sesuai kebutuhan beban kerja nyata</span></div>
                     </div>
                   </div>
                   <div className="mt-8 pt-4 md:flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Efisiensi Biaya Server hingga 35-50%</span>
-                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><Icon name="arrow_forward" className="text-base" /></a>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div>
                     <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
-                      <span className="material-symbols-outlined text-3xl">smart_toy</span>
+                      <Icon name="smart_toy" className="text-3xl" />
                     </div>
                     <div className="inline-block text-xs font-semibold text-blue-600 tracking-wide uppercase mb-1">Otomasi Proses &amp; AI Praktis</div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Solusi Kecerdasan Buatan &amp; Otomasi Data</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6">Mengintegrasikan kecerdasan buatan (AI) yang aplikatif ke dalam operasional bisnis Anda. Mempercepat pemrosesan data rutin, asisten pintar berbasis dokumen internal, dan analisis prediktif.</p>
                     <div className="space-y-2.5 pt-4 border-t border-slate-100">
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Chatbot &amp; asisten virtual internal berbasis data perusahaan yang privat</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Otomasi ekstraksi dokumen, faktur, serta laporan bisnis otomatis</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Dashboard wawasan data real-time untuk pengambilan keputusan pimpinan</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Chatbot &amp; asisten virtual internal berbasis data perusahaan yang privat</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Otomasi ekstraksi dokumen, faktur, serta laporan bisnis otomatis</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Dashboard wawasan data real-time untuk pengambilan keputusan pimpinan</span></div>
                     </div>
                   </div>
                   <div className="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Privasi Data Terenkripsi &amp; Nol Kebocoran</span>
-                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><Icon name="arrow_forward" className="text-base" /></a>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div>
                     <div className="w-14 h-14 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
-                      <span className="material-symbols-outlined text-3xl">verified_user</span>
+                      <Icon name="verified_user" className="text-3xl" />
                     </div>
                     <div className="inline-block text-xs font-semibold text-blue-600 tracking-wide uppercase mb-1">Perlindungan Data &amp; Audit Berkala</div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Keamanan Sistem &amp; Pemeliharaan 24/7</h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-6">Perlindungan menyeluruh terhadap ancaman siber dan kebocoran data. Tim kami memantau keandalan server setiap saat, melakukan update keamanan berkala, dan penanganan insiden cepat.</p>
                     <div className="space-y-2.5 pt-4 border-t border-slate-100">
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Audit celah keamanan (Penetration Testing) dan kepatuhan data</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Pencadangan (Backup) data otomatis berkala dan pemulihan bencana cepat</span></div>
-                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><span className="material-symbols-outlined text-blue-600 text-lg shrink-0 mt-0.5">check_circle</span><span>Pemantauan kinerja server dan penanganan kendala responsif 24 jam</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Audit celah keamanan (Penetration Testing) dan kepatuhan data</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Pencadangan (Backup) data otomatis berkala dan pemulihan bencana cepat</span></div>
+                      <div className="flex items-start gap-2.5 text-sm text-slate-700"><Icon name="check_circle" className="text-blue-600 text-lg shrink-0 mt-0.5" /><span>Pemantauan kinerja server dan penanganan kendala responsif 24 jam</span></div>
                     </div>
                   </div>
                   <div className="mt-8 pt-4 flex items-center justify-between border-t border-slate-50">
                     <span className="text-xs font-medium text-slate-500">Standar Proteksi OWASP &amp; Kepatuhan UU PDP</span>
-                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><span className="material-symbols-outlined text-base">arrow_forward</span></a>
+                    <a href="/layanan" className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"><span>Pelajari Detail</span><Icon name="arrow_forward" className="text-base" /></a>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function Layanan() {
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border-2 border-blue-600/30 shadow-lg relative flex flex-col justify-between hover:shadow-xl transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm text-center">Pilihan Favorit</div>
                   <div>
-                    <div className="text-blue-600 mb-4"><span className="material-symbols-outlined text-4xl">groups</span></div>
+                    <div className="text-blue-600 mb-4"><Icon name="groups" className="text-4xl" /></div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Tim Dedikasi Penuh</h3>
                     <p className="text-slate-600 text-sm mb-6">Satu tim rekayasa software lengkap yang bekerja eksklusif untuk mengeksekusi visi produk digital jangka panjang perusahaan Anda.</p>
                     <div className="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
@@ -210,7 +210,7 @@ export default function Layanan() {
 
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div>
-                    <div className="text-blue-600 mb-4"><span className="material-symbols-outlined text-4xl">task_alt</span></div>
+                    <div className="text-blue-600 mb-4"><Icon name="task_alt" className="text-4xl" /></div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Proyek Berbasis Milestone</h3>
                     <p className="text-slate-600 text-sm mb-6">Pembangunan sistem dengan ruang lingkup, anggaran biaya, serta target waktu penyelesaian yang disepakati pasti sejak awal.</p>
                     <div className="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
@@ -233,7 +233,7 @@ export default function Layanan() {
 
                 <div className="max-w-sm lg:max-w-md bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm relative flex flex-col justify-between hover:shadow-xl transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div>
-                    <div className="text-blue-600 mb-4"><span className="material-symbols-outlined text-4xl">person_pin</span></div>
+                    <div className="text-blue-600 mb-4"><Icon name="person_pin" className="text-4xl" /></div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Konsultasi Teknis &amp; Advisory</h3>
                     <p className="text-slate-600 text-sm mb-6">Dukungan tenaga ahli senior untuk memperkuat tim internal Anda, mengaudit keamanan kode, atau menentukan arah arsitektur software.</p>
                     <div className="bg-slate-50 rounded-xl p-4 mb-6 border border-slate-100">
@@ -265,23 +265,23 @@ export default function Layanan() {
               <div className="bg-linear-to-br from-blue-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-xl" data-aos="fade-up">
                 <div className="absolute -right-16 -top-16 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
                 <div className="w-full max-w-3xl relative z-10 mb-12">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-blue-200 text-xs font-semibold tracking-wider uppercase mb-4"><span className="material-symbols-outlined text-sm">verified</span> Komitmen Kontraktual</div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-blue-200 text-xs font-semibold tracking-wider uppercase mb-4"><Icon name="verified" className="text-sm" /> Komitmen Kontraktual</div>
                   <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Jaminan Kualitas &amp; Standar Layanan</h2>
                   <p className="text-slate-300 mt-3 text-base leading-relaxed">Kami percaya bahwa kepercayaan bisnis dibangun di atas transparansi dan akuntabilitas. Setiap kerjasama dilindungi oleh perjanjian resmi yang mengikat.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">speed</span></div>
+                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><Icon name="speed" className="text-2xl" /></div>
                     <h3 className="text-xl font-bold mb-2">Service Level Agreement (SLA)</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Jaminan ketersediaan sistem hingga 99.9% dan respons darurat teknis di bawah 1 jam untuk memastikan operasional bisnis berjalan normal.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">lock</span></div>
+                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><Icon name="lock" className="text-2xl" /></div>
                     <h3 className="text-xl font-bold mb-2">Kepatuhan Keamanan Data</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Penerapan enkripsi standar industri, penandatanganan Perjanjian Kerahasiaan (NDA), dan kepatuhan terhadap regulasi perlindungan data pribadi.</p>
                   </div>
                   <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><span className="material-symbols-outlined text-2xl">key</span></div>
+                    <div className="w-12 h-12 rounded-xl bg-blue-500/30 text-blue-200 flex items-center justify-center mb-4"><Icon name="key" className="text-2xl" /></div>
                     <h3 className="text-xl font-bold mb-2">100% Kepemilikan Kode Sumber</h3>
                     <p className="text-slate-300 text-sm leading-relaxed">Seluruh hak cipta kode program, aset desain, dan dokumentasi arsitektur sepenuhnya diserahkan menjadi aset sah perusahaan Anda.</p>
                   </div>
@@ -299,13 +299,13 @@ export default function Layanan() {
               <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Diskusikan Kebutuhan Digital Bisnis Anda Hari Ini</h2>
               <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">Tim arsitek solusi kami siap mendengarkan rencana proyek Anda, memberikan estimasi transparan, dan membantu merancang peta jalan teknis yang efektif.</p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/25 hover:shadow-lg transition-all flex items-center justify-center gap-2"><span className="material-symbols-outlined text-xl">calendar_today</span><span>Jadwalkan Sesi Konsultasi</span></a>
-                <a href="#" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2"><span className="material-symbols-outlined text-xl">description</span><span>Minta Penawaran / Portofolio</span></a>
+                <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md shadow-blue-600/25 hover:shadow-lg transition-all flex items-center justify-center gap-2"><Icon name="calendar_today" className="text-xl" /><span>Jadwalkan Sesi Konsultasi</span></a>
+                <a href="#" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-bold text-sm border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2"><Icon name="description" className="text-xl" /><span>Minta Penawaran / Portofolio</span></a>
               </div>
               <div className="mt-8 flex items-center justify-center gap-6 text-xs text-slate-500">
-                <div className="flex items-center gap-1.5"><span className="material-symbols-outlined text-green-600 text-base">check</span><span>Tanpa Komitmen Awal</span></div>
-                <div className="flex items-center gap-1.5"><span className="material-symbols-outlined text-green-600 text-base">check</span><span>Respon Cepat 1x24 Jam</span></div>
-                <div className="flex items-center gap-1.5"><span className="material-symbols-outlined text-green-600 text-base">check</span><span>Perjanjian Kerahasiaan (NDA)</span></div>
+                <div className="flex items-center gap-1.5"><Icon name="check" className="text-green-600 text-base" /><span>Tanpa Komitmen Awal</span></div>
+                <div className="flex items-center gap-1.5"><Icon name="check" className="text-green-600 text-base" /><span>Respon Cepat 1x24 Jam</span></div>
+                <div className="flex items-center gap-1.5"><Icon name="check" className="text-green-600 text-base" /><span>Perjanjian Kerahasiaan (NDA)</span></div>
               </div>
             </div>
           </div>

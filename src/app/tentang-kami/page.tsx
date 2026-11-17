@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import Icon from "@/components/Icon";
 export const metadata = {
   title: "Tentang Kami — CodeLens: Dedikasi & Integritas Sejak 2018",
   description:
@@ -29,11 +30,11 @@ export default function TentangKami() {
                   <div className="mt-8 flex flex-wrap items-center gap-4">
                     <a href="#nilai-utama" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-all shadow-md shadow-blue-600/25">
                       Kenali Nilai Kami
-                      <span className="material-symbols-outlined text-base">arrow_downward</span>
+                      <Icon name="arrow_downward" className="text-base" />
                     </a>
                     <a href="#tim-pimpinan" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 hover:border-slate-300 transition-all shadow-sm">
                       Lihat Tim Pimpinan
-                      <span className="material-symbols-outlined text-base">people</span>
+                      <Icon name="people" className="text-base" />
                     </a>
                   </div>
                 </div>
@@ -41,7 +42,7 @@ export default function TentangKami() {
                   <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-xl shadow-slate-100 space-y-4" data-aos="fade-up" data-aos-delay="300">
                     <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                       <div className="flex items-center gap-2">
-                        <span className="material-symbols-outlined text-blue-600">verified</span>
+                        <Icon name="verified" className="text-blue-600" />
                         <span className="font-semibold text-slate-800 text-sm">Keandalan Sistem</span>
                       </div>
                       <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Aktif 99.99%</span>
@@ -77,28 +78,28 @@ export default function TentangKami() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
                 <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="100">
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-2xl">favorite</span>
+                    <Icon name="favorite" className="text-2xl" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">Pendekatan Humanis</h4>
+                    <h2 className="font-bold text-slate-900">Pendekatan Humanis</h2>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">Teknologi mutakhir harus melayani manusia dengan kehangatan dan kemudahan akses nyata.</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-2xl">architecture</span>
+                    <Icon name="architecture" className="text-2xl" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">Arsitektur Teruji</h4>
+                    <h2 className="font-bold text-slate-900">Arsitektur Teruji</h2>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">Kekuatan fondasi sistem dirancang tahan uji beban tinggi dan minim gangguan teknis.</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-sm flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
                   <div className="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-                    <span className="material-symbols-outlined text-2xl">support_agent</span>
+                    <Icon name="support_agent" className="text-2xl" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">Dukungan Responsif</h4>
+                    <h2 className="font-bold text-slate-900">Dukungan Responsif</h2>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">Kolaborasi aktif dan komunikasi terbuka setiap hari bersama para pimpinan proyek.</p>
                   </div>
                 </div>
@@ -126,7 +127,7 @@ export default function TentangKami() {
                 <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-blue-100/70 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                      <span className="material-symbols-outlined text-2xl">verified_user</span>
+                      <Icon name="verified_user" className="text-2xl" />
                     </div>
                     <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-semibold text-xs border border-blue-100">
                       Nilai #01
@@ -146,7 +147,7 @@ export default function TentangKami() {
                 <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-sky-100/70 text-sky-600 flex items-center justify-center group-hover:bg-sky-600 group-hover:text-white transition-colors">
-                      <span className="material-symbols-outlined text-2xl">forum</span>
+                      <Icon name="forum" className="text-2xl" />
                     </div>
                     <span className="px-3 py-1 rounded-full bg-sky-50 text-sky-700 font-semibold text-xs border border-sky-100">
                       Nilai #02
@@ -166,7 +167,7 @@ export default function TentangKami() {
                 <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-indigo-100/70 text-indigo-600 flex items-center justify-center group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-                      <span className="material-symbols-outlined text-2xl">sentiment_satisfied</span>
+                      <Icon name="sentiment_satisfied" className="text-2xl" />
                     </div>
                     <span className="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 font-semibold text-xs border border-indigo-100">
                       Nilai #03
@@ -186,7 +187,7 @@ export default function TentangKami() {
                 <div className="group bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/5 transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
                   <div className="flex items-center justify-between mb-5">
                     <div className="w-12 h-12 rounded-xl bg-teal-100/70 text-teal-700 flex items-center justify-center group-hover:bg-teal-700 group-hover:text-white transition-colors">
-                      <span className="material-symbols-outlined text-2xl">psychology</span>
+                      <Icon name="psychology" className="text-2xl" />
                     </div>
                     <span className="px-3 py-1 rounded-full bg-teal-50 text-teal-700 font-semibold text-xs border border-teal-100">
                       Nilai #04
@@ -360,7 +361,7 @@ export default function TentangKami() {
                     <div className="inline-block px-2.5 py-0.5 mt-1 rounded bg-blue-50 text-blue-700 text-xs font-semibold">
                       Awal Mula Pendirian
                     </div>
-                    <h4 className="font-bold text-slate-900 mt-4 text-base">Lahirnya CodeLens</h4>
+                    <h3 className="font-bold text-slate-900 mt-4 text-base">Lahirnya CodeLens</h3>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                       Didirikan oleh empat praktisi senior dengan satu tujuan: menghasilkan perangkat lunak yang andal dan transparan bagi setiap mitra.
                     </p>
@@ -379,7 +380,7 @@ export default function TentangKami() {
                     <div className="inline-block px-2.5 py-0.5 mt-1 rounded bg-sky-50 text-sky-700 text-xs font-semibold">
                       Pertumbuhan Pesat
                     </div>
-                    <h4 className="font-bold text-slate-900 mt-4 text-base">10 Juta Transaksi/Hari</h4>
+                    <h3 className="font-bold text-slate-900 mt-4 text-base">10 Juta Transaksi/Hari</h3>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                       Berhasil membangun infrastruktur transaksi perbankan digital dengan latensi rendah dan stabilitas layanan tanpa jeda down-time.
                     </p>
@@ -398,7 +399,7 @@ export default function TentangKami() {
                     <div className="inline-block px-2.5 py-0.5 mt-1 rounded bg-indigo-50 text-indigo-700 text-xs font-semibold">
                       Kolaborasi Global
                     </div>
-                    <h4 className="font-bold text-slate-900 mt-4 text-base">Hub Zurich &amp; Singapura</h4>
+                    <h3 className="font-bold text-slate-900 mt-4 text-base">Hub Zurich &amp; Singapura</h3>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                       Membuka perwakilan internasional demi memberikan layanan bantuan 24 jam penuh di berbagai zona waktu bagi seluruh klien kami.
                     </p>
@@ -417,7 +418,7 @@ export default function TentangKami() {
                     <div className="inline-block px-2.5 py-0.5 mt-1 rounded bg-blue-100/80 text-blue-800 text-xs font-bold">
                       Era Enterprise &amp; AI
                     </div>
-                    <h4 className="font-bold text-slate-900 mt-4 text-base">140+ Ahli Terpadu</h4>
+                    <h3 className="font-bold text-slate-900 mt-4 text-base">140+ Ahli Terpadu</h3>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                       Mendukung lebih dari 60 institusi ternama di bidang teknologi finansial, kesehatan digital, dan platform kecerdasan buatan terapan.
                     </p>
@@ -442,7 +443,7 @@ export default function TentangKami() {
                 <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-6">
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-100 text-xs font-semibold mb-4 border border-white/20">
-                      <span className="material-symbols-outlined text-sm">sentiment_very_satisfied</span>
+                      <Icon name="sentiment_very_satisfied" className="text-sm" />
                       Budaya Kerja Inklusif &amp; Kolaboratif
                     </div>
                     <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">
@@ -453,15 +454,15 @@ export default function TentangKami() {
                     </p>
                     <div className="flex flex-wrap gap-2.5 mt-6">
                       <span className="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-sm text-xs font-medium text-white border border-white/10 flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-sm text-sky-200">check_circle</span>
+                        <Icon name="check_circle" className="text-sm text-sky-200" />
                         Waktu Kerja Fleksibel &amp; WFH
                       </span>
                       <span className="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-sm text-xs font-medium text-white border border-white/10 flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-sm text-sky-200">check_circle</span>
+                        <Icon name="check_circle" className="text-sm text-sky-200" />
                         Tunjangan Riset &amp; Sertifikasi
                       </span>
                       <span className="px-3.5 py-1.5 rounded-xl bg-white/10 backdrop-blur-sm text-xs font-medium text-white border border-white/10 flex items-center gap-1.5">
-                        <span className="material-symbols-outlined text-sm text-sky-200">check_circle</span>
+                        <Icon name="check_circle" className="text-sm text-sky-200" />
                         Asuransi Kesehatan Keluarga Lengkap
                       </span>
                     </div>
@@ -469,11 +470,11 @@ export default function TentangKami() {
                   <div className="lg:col-span-6 flex flex-col sm:flex-row lg:flex-col gap-3 justify-center">
                     <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white text-blue-800 font-bold text-sm hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl text-center">
                       <span>Lihat Lowongan Terbuka</span>
-                      <span className="material-symbols-outlined text-base">arrow_forward</span>
+                      <Icon name="arrow_forward" className="text-base" />
                     </a>
                     <a href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/20 text-white font-semibold text-sm border border-white/25 transition-all text-center">
                       <span>Buku Panduan Budaya Tim</span>
-                      <span className="material-symbols-outlined text-base">auto_stories</span>
+                      <Icon name="auto_stories" className="text-base" />
                     </a>
                   </div>
                 </div>

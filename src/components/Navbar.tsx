@@ -6,6 +6,7 @@ import Image from "next/image";
 import { getCachedImageSrc } from "@/lib/imageCache";
 import Link from "next/link";
 
+import Icon from "./Icon";
 const logoSrc = getCachedImageSrc("/images/logo/logo2.png") || "/images/logo/logo2.png";
 
 const navLinks = [
@@ -149,7 +150,7 @@ export default function Navbar() {
             className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors"
             aria-label="Close menu"
           >
-            <span className="material-symbols-outlined text-slate-700 text-xl">close</span>
+            <Icon name="close" className="text-slate-700 text-xl" />
           </button>
         </div>
 
