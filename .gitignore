@@ -1,27 +1,20 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
+node_modules/
 
 # next.js
-/.next/
-/out/
+.next/
+out/
 
 # production
-/build
+build/
+dist/
+
+# testing
+coverage/
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # debug
@@ -30,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env
 .env*
 
 # vercel
@@ -40,32 +33,23 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# ide
+.vscode/
+.idea/
+
+# hermes
 .hermes/
 .hermes-cache/
 hermes.config.json
 hermes.local.*
 *.hermes
 
-node_modules/
-.next/
-out/
-build/
-dist/
-
-.env
-.env.local
-.env.*.local
-
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
+# dokumen aturan kanonik (local only, tidak untuk repo publik)
 agents.md
 design.md
+PRD.md
+NOTEPAD.md
+docs/
 
+# referensi desain
 stitch-reference/
