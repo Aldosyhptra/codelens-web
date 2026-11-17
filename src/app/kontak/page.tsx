@@ -24,7 +24,7 @@ const durations = [
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
-      <section className="w-full pt-28 pb-16 lg:pt-24 lg:pb-28 bg-[#F8FAFF] overflow-hidden">
+      <section className="w-full min-h-screen flex flex-col justify-center pt-28 pb-16 lg:pt-24 lg:pb-28 bg-[#F8FAFF] overflow-hidden">
         <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
           <div className="w-full flex flex-col items-center" data-aos="fade-up">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
