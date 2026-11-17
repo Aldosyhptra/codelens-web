@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
+import Icon from "@/components/Icon";
 export default function KontakPage() {
   const [selectedProject, setSelectedProject] = useState<string>("app");
   const [selectedDuration, setSelectedDuration] = useState<string>("standar");
@@ -27,7 +28,7 @@ const durations = [
       <section className="w-full pt-28 pb-16 lg:pt-24 lg:pb-28 bg-[#F8FAFF] overflow-hidden">
         <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
           <div className="w-full flex flex-col items-center" data-aos="fade-up">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-4">
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Respon Cepat Dalam 24 Jam
             </div>
@@ -67,7 +68,7 @@ const durations = [
                   <div className="flex items-center justify-between pb-6 border-b border-slate-100" id="jadwal-cto" >
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
-                        <span className="material-symbols-outlined text-xl">calculate</span>
+                        <Icon name="calculate" className="text-xl" />
                       </div>
                       <div>
                         <h2 className="text-xl font-bold text-slate-900">Kalkulator Estimasi Proyek</h2>
@@ -82,12 +83,12 @@ const durations = [
                   <div className="mt-6">
                     <label className="block text-sm font-bold text-slate-800 mb-3">1. Pilih Jenis Proyek Anda</label>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {projectTypes.map((pt, i) => {
+                      {projectTypes.map((pt) => {
                         const isSelected = pt.type === selectedProject;
                         return (
                           <button key={pt.type} type="button" onClick={() => setSelectedProject(pt.type)} className={`project-card text-left p-4 rounded-xl border-2 transition-all flex items-start gap-3 group cursor-pointer ${isSelected ? "border-blue-500 bg-blue-100 text-blue-700 shadow-md shadow-blue-100/50" : "border-slate-100 hover:border-blue-200 hover:bg-slate-50/50"}`}>
                             <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${isSelected ? "bg-blue-600 text-white" : "bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white"}`}>
-                              <span className="material-symbols-outlined text-xl">{pt.icon}</span>
+                              <Icon name={pt.icon} className="text-xl" />
                             </div>
                             <div>
                               <h3 className="text-sm font-bold text-slate-900">{pt.title}</h3>
@@ -101,7 +102,7 @@ const durations = [
                   <div className="mt-6">
                     <label className="block text-sm font-bold text-slate-800 mb-3">2. Estimasi Waktu Target Peluncuran</label>
                     <div className="grid grid-cols-3 gap-3">
-                      {durations.map((d, i) => {
+                      {durations.map((d) => {
                         const isSelected = d.key === selectedDuration;
                         return (
                           <button key={d.key} type="button" onClick={() => setSelectedDuration(d.key)} className={`durasi-btn py-3 px-2 rounded-xl border-2 text-center transition-all cursor-pointer ${isSelected ? "border-blue-500 bg-blue-100" : "border-slate-100 hover:border-blue-200 hover:bg-slate-50/50"}`}>
@@ -163,10 +164,10 @@ const durations = [
                     <div className="pt-3">
                       <button className="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-base shadow-lg shadow-blue-600/25 hover:shadow-xl transition-all flex items-center justify-center gap-2 cursor-pointer" type="submit">
                         <span>Kirim Permintaan Konsultasi</span>
-                        <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                        <Icon name="arrow_forward" className="text-lg" />
                       </button>
                       <div className="mt-3 flex items-center justify-center gap-2 text-xs text-slate-500">
-                        <span className="material-symbols-outlined text-emerald-600 text-sm">lock</span>
+                        <Icon name="lock" className="text-emerald-600 text-sm" />
                         <span>Informasi Anda aman dan terlindungi oleh perjanjian kerahasiaan (NDA).</span>
                       </div>
                     </div>
@@ -197,27 +198,27 @@ const durations = [
                         { time: "Lusa, 11:00 WIB", status: "Slot Tersedia" },
                         { time: "Lusa, 15:00 WIB", status: "Slot Tersedia" },
                       ].map((slot, i) => (
-                        <button key={i} className="p-2.5 rounded-xl border border-slate-200 text-left hover:border-blue-500 hover:bg-blue-50/50 transition-all cursor-pointer" type="button" data-aos="fade-up" data-aos-delay={300 + i * 100}>
+                        <button key={i} className="p-2.5 rounded-xl border border-slate-200 text-left hover:border-blue-500 hover:bg-blue-50/50 transition-all cursor-pointer" type="button" data-aos="fade-up" data-aos-delay={i * 100}>
                           <span className="text-xs font-bold text-slate-800 block">{slot.time}</span>
                           <span className="text-[11px] text-blue-600 font-medium">{slot.status}</span>
                         </button>
                       ))}
                     </div>
                   </div>
-                  <button className="w-full py-2.5 px-4 rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer" type="button" data-aos="fade-up" data-aos-delay="700">
-                    <span className="material-symbols-outlined text-base">calendar_month</span>
+                  <button className="w-full py-2.5 px-4 rounded-xl border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer" type="button" data-aos="fade-up" data-aos-delay="300">
+                    <Icon name="calendar_month" className="text-base" />
                     Buka Kalender Online Lengkap
                   </button>
                 </div>
                 <div className="bg-white rounded-2xl p-6 sm:p-7 shadow-xl shadow-slate-100 border border-slate-100" data-aos="fade-up" data-aos-delay="300">
                   <h3 className="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
-                    <span className="material-symbols-outlined text-blue-600">contact_support</span>
+                    <Icon name="contact_support" className="text-blue-600" />
                     Alamat Kantor &amp; Kontak Resmi
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="material-symbols-outlined text-base">chat</span>
+                        <Icon name="chat" className="text-base" />
                       </div>
                       <div>
                         <span className="text-xs text-slate-400 font-medium block uppercase tracking-wider">WhatsApp &amp; Telepon</span>
@@ -227,7 +228,7 @@ const durations = [
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="material-symbols-outlined text-base">mail</span>
+                        <Icon name="mail" className="text-base" />
                       </div>
                       <div>
                         <span className="text-xs text-slate-400 font-medium block uppercase tracking-wider">Email Resmi</span>
@@ -237,7 +238,7 @@ const durations = [
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="material-symbols-outlined text-base">location_on</span>
+                        <Icon name="location_on" className="text-base" />
                       </div>
                       <div>
                         <span className="text-xs text-slate-400 font-medium block uppercase tracking-wider">Alamat Kantor</span>
@@ -258,7 +259,7 @@ const durations = [
           <div className="w-full flex flex-col items-center">
             <div className="w-full flex flex-col items-center mb-10" data-aos="fade-up">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-1">Bantuan &amp; Transparansi</span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Pertanyaan Umum (FAQ)</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Pertanyaan Umum (FAQ)</h2>
               <p className="text-sm text-slate-600 mt-2">Semua hal penting yang sering ditanyakan sebelum memulai kolaborasi proyek.</p>
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -267,9 +268,9 @@ const durations = [
                 { icon: "health_and_safety", iconBg: "bg-emerald-50", iconColor: "text-emerald-600", title: "Garansi Setelah Rilis", desc: "Kami menyertakan garansi perbaikan bug dan pendampingan stabilitas server tanpa biaya tambahan hingga 3 bulan penuh pasca peluncuran resmi." },
                 { icon: "sync_saved_locally", iconBg: "bg-amber-50", iconColor: "text-amber-600", title: "Proses Revisi & Pelaporan", desc: "Pengembangan dilakukan secara berkala (Agile/Sprint dua mingguan). Anda memiliki kontrol penuh untuk mengevaluasi dan mengajukan penyelarasan di setiap fase." },
               ].map((faq, i) => (
-                <div key={faq.title} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay={i * 150}>
+                <div key={faq.title} className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className={`w-9 h-9 rounded-xl ${faq.iconBg} ${faq.iconColor} flex items-center justify-center mb-4`}>
-                    <span className="material-symbols-outlined text-xl">{faq.icon}</span>
+                    <Icon name={faq.icon} className="text-xl" />
                   </div>
                   <h3 className="text-base font-bold text-slate-900 mb-2">{faq.title}</h3>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{faq.desc}</p>

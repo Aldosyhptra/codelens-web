@@ -9,7 +9,7 @@ export default function AosInitializer() {
   useEffect(() => {
     preloadImages(["/images/logo/logo2.png"]);
     AOS.init({
-      duration: 300,
+      duration: 500,
       easing: "ease-out",
       once: true,
       offset: 50,

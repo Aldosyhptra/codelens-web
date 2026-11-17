@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
+import Icon from "@/components/Icon";
 const caseStudies = [
   {
     id: "novaPay",
@@ -118,25 +119,25 @@ export default function PortfolioPage() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Rekam Jejak Solusi Nyata
             </div>
-            <h1 className="text-xl sm:text-3xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
               Portofolio &amp; Studi Kasus <span className="text-blue-600">Nyata</span>
             </h1>
-            <p className="mt-6 text-md sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Pelajari bagaimana kami membantu berbagai perusahaan menyelesaikan tantangan teknologi.
             </p>
             <div className="w-full flex flex-wrap justify-center items-center gap-6 sm:gap-12 pt-4">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">50+</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">50+</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Sistem Enterprise Selesai</div>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block" />
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">99.99%</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">99.99%</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Rata-rata Uptime Produksi</div>
               </div>
               <div className="h-8 w-px bg-slate-200 hidden sm:block" />
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-extrabold text-blue-600">4x Lipat</div>
+                <div className="text-xl sm:text-2xl lg:text-4xl font-extrabold text-blue-600">4x Lipat</div>
                 <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">Peningkatan Efisiensi Rata-rata</div>
               </div>
             </div>
@@ -162,12 +163,12 @@ export default function PortfolioPage() {
       {filteredCaseStudies.filter((cs) => cs.isFeatured).map((featured) => (
         <section key={featured.id} className="w-full py-10" data-aos="fade-up">
           <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
-            <article className="w-full rounded-3xl bg-white border border-blue-100 p-6 sm:p-8 md:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden transition-all" data-aos="zoom-in">
+            <article className="w-full rounded-3xl bg-white border border-blue-100 p-6 sm:p-8 md:p-10 shadow-xl shadow-blue-900/5 relative overflow-hidden transition-all" data-aos="fade-up">
               <div className="absolute top-0 right-0 -mt-8 -mr-8 w-48 h-48 md:w-72 md:h-72 bg-blue-50 rounded-full blur-3xl pointer-events-none" />
               <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10 items-center relative z-10">
                 <div className="lg:col-span-7 w-full space-y-6">
                   <div className="flex flex-wrap items-center gap-2.5">
-                    <span className="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-bold uppercase tracking-wider whitespace-nowrap">{featured.badge}</span>
+                    <span className="px-3 py-1 rounded-full bg-blue-600 text-white text-xs font-semibold uppercase tracking-wide whitespace-nowrap">{featured.badge}</span>
                     <span className="px-3 py-1 rounded-full text-blue-600 bg-blue-50 text-xs font-semibold whitespace-nowrap">{featured.tag}</span>
                   </div>
                   <div className="space-y-3">
@@ -184,7 +185,7 @@ export default function PortfolioPage() {
                     ))}
                   </div>
                   <div className="w-full p-5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-4">
-                    <span className="material-symbols-outlined text-blue-600 text-2xl shrink-0 mt-0.5">format_quote</span>
+                    <Icon name="format_quote" className="text-blue-600 text-2xl shrink-0 mt-0.5" />
                     <div className="space-y-1">
                       <p className="text-sm text-slate-700 italic">&ldquo;{featured.clientQuote}&rdquo;</p>
                       <div className="text-xs font-semibold text-blue-600">{featured.clientName}</div>
@@ -204,19 +205,19 @@ export default function PortfolioPage() {
                       {featured.systemSteps?.map((step) => (
                         <div key={step.icon} className="w-full p-3 bg-white rounded-xl border border-slate-200 flex items-center justify-between gap-2 shadow-sm">
                           <div className="flex items-center gap-2 min-w-0">
-                            <span className="material-symbols-outlined text-blue-600 text-lg shrink-0">{step.icon}</span>
+                            <Icon name={step.icon} className="text-blue-600 text-lg shrink-0" />
                             <span className="font-medium text-slate-800 truncate">{step.label}</span>
                           </div>
                           <span className={`font-semibold shrink-0 whitespace-nowrap ${step.statusColor}`}>{step.status}</span>
                         </div>
                       ))}
                       <div className="w-full flex justify-center text-slate-400">
-                        <span className="material-symbols-outlined text-base">arrow_downward</span>
+                        <Icon name="arrow_downward" className="text-base" />
                       </div>
                     </div>
                     <div className="w-full pt-2 text-center">
                       <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-500">
-                        <span className="material-symbols-outlined text-sm text-emerald-500">check_circle</span>
+                        <Icon name="check_circle" className="text-sm text-emerald-500" />
                         Telah diuji pada 50.000 transaksi bersamaan per detik
                       </span>
                     </div>
@@ -233,20 +234,20 @@ export default function PortfolioPage() {
           <div className="w-full">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
               <div>
-                <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">Katalog Portofolio Pilihan</h3>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Katalog Portofolio Pilihan</h2>
                 <p className="text-slate-600 text-sm mt-1">Implementasi solusi modern yang teruji di berbagai sektor industri.</p>
               </div>
             </div>
             <div className="w-full flex flex-wrap gap-6 items-center justify-center">
               {filteredCaseStudies.filter((cs) => !cs.isFeatured).map((cs, i) => (
-                <article key={cs.id} className="max-w-md flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group" data-aos="zoom-in" data-aos-delay={i * 150}>
+                <article key={cs.id} className="max-w-md flex flex-col justify-between rounded-3xl bg-white border border-slate-200/80 p-6 hover:shadow-xl hover:border-blue-200 transition-all group hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className="w-full space-y-5">
                     <div className="relative w-full h-56 rounded-2xl overflow-hidden bg-slate-100">
                       <Image alt={cs.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={cs.image} width={800} height={400} />
                       <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-blue-600 text-xs font-semibold shadow-sm">{cs.tag}</span>
                     </div>
                     <div className="w-full space-y-2">
-                      <h4 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">{cs.title}</h4>
+                      <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug">{cs.title}</h3>
                       <p className="text-sm text-slate-600 leading-relaxed">{cs.desc}</p>
                     </div>
                     <div className="w-full grid grid-cols-2 gap-3 p-3.5 rounded-xl bg-blue-50/50 border border-blue-100">
@@ -266,7 +267,7 @@ export default function PortfolioPage() {
                   <div className="w-full pt-5 mt-5 border-t border-slate-100 flex items-center justify-between">
                     <span className="text-xs text-slate-500 font-medium">Studi Kasus Teruji</span>
                     <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-1 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors">
-                      Pelajari <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                      Pelajari <Icon name="arrow_forward" className="text-sm" />
                     </a>
                   </div>
                 </article>
@@ -282,11 +283,11 @@ export default function PortfolioPage() {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Perbandingan Dampak Kerja Nyata</span>
-                <h3 className="text-2xl font-extrabold text-slate-900 mt-1">Sebelum &amp; Sesudah Bersama CodeLens</h3>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Sebelum &amp; Sesudah Bersama CodeLens</h2>
                 <p className="text-sm text-slate-600 mt-0.5">Perubahan terukur yang dialami oleh mitra teknologi kami.</p>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-100 self-start sm:self-auto">
-                <span className="material-symbols-outlined text-base">assessment</span>
+                <Icon name="assessment" className="text-base" />
                 Data Rata-Rata Seluruh Proyek
               </div>
             </div>
@@ -305,7 +306,7 @@ export default function PortfolioPage() {
                     <tr key={row.label} className="hover:bg-slate-50/70 transition-colors">
                       <td className="py-4 px-2 font-bold text-slate-900 flex items-center gap-2.5">
                         <span className="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-lg">{row.icon}</span>
+                          <Icon name={row.icon} className="text-lg" />
                         </span>
                         {row.label}
                       </td>
@@ -323,21 +324,21 @@ export default function PortfolioPage() {
 
       <section className="w-full py-10 md:pt-10 bg-transparent" id="kontak">
         <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
-          <div className="w-full max-w-5xl rounded-3xl bg-linear-to-r from-blue-700 via-blue-800 to-indigo-800 p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-xl" data-aos="zoom-in">
+          <div className="w-full max-w-5xl rounded-3xl bg-linear-to-r from-blue-700 via-blue-800 to-indigo-800 p-6 sm:p-8 md:p-12 text-white relative overflow-hidden shadow-xl" data-aos="fade-up">
             <div className="w-full max-w-2xl space-y-4 relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-semibold">
-                <span className="material-symbols-outlined text-sm">handshake</span>
+                <Icon name="handshake" className="text-sm" />
                 Kolaborasi Rekayasa Digital
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-snug">Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-snug">Ingin membangun solusi serupa untuk bisnis Anda? Hubungi tim kami.</h2>
               <p className="text-blue-100 text-sm md:text-base leading-relaxed">Diskusikan kebutuhan aplikasi, platform, atau pembaruan infrastruktur Anda.</p>
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <a href="/kontak#jadwal-cto" className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-blue-800 hover:bg-blue-50 font-bold text-sm text-center shadow-lg transition-all flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-lg">calendar_today</span>
+                  <Icon name="calendar_today" className="text-lg" />
                   Jadwalkan Konsultasi Gratis
                 </a>
                 <a href="#" className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm text-center transition-all flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-lg">chat</span>
+                  <Icon name="chat" className="text-lg" />
                   Chat WhatsApp Tim Ahli
                 </a>
               </div>
@@ -345,6 +346,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
