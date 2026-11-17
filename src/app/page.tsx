@@ -21,7 +21,7 @@ export default function Home() {
                   Mitra Rekayasa Perangkat Lunak Terpercaya
                 </div>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
-                  Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> &amp; Skala Global
+                  Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> Skala Global
                 </h1>
                 <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.
@@ -43,11 +43,11 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-blue-600 text-lg">speed</span>
-                    <span className="font-medium">Performa Cepat &amp; Ringan</span>
+                    <span className="font-medium">Performa Cepat Ringan</span>
                   </div>
                   <div className="flex items-center gap-2 col-span-2 sm:col-span-1">
                     <span className="material-symbols-outlined text-blue-600 text-lg">lock</span>
-                    <span className="font-medium">Privasi &amp; Data Terlindungi</span>
+                    <span className="font-medium">Privasi Data Terlindungi</span>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
                         <span className="material-symbols-outlined">insights</span>
                       </div>
                       <div>
-                        <h3 className="font-bold text-slate-900 text-base">Status Sistem &amp; Layanan</h3>
+                        <h3 className="font-bold text-slate-900 text-base">Status Sistem Layanan</h3>
                         <p className="text-xs text-slate-500">Pemantauan Waktu Nyata</p>
                       </div>
                     </div>
@@ -119,7 +119,7 @@ export default function Home() {
                 { icon: "verified", value: "99.9%", title: "Keandalan Sistem", desc: "Jaminan uptime tanpa kendala teknis" },
                 { icon: "rocket_launch", value: "140+", title: "Proyek Sukses", desc: "Dirilis untuk UMKM hingga korporasi" },
                 { icon: "workspace_premium", value: "10+ Tahun", title: "Pengalaman Industri", desc: "Praktik rekayasa digital berstandar" },
-                { icon: "security", value: "100%", title: "Keamanan Terjamin", desc: "Sertifikasi &amp; kepatuhan privasi data" },
+                { icon: "security", value: "100%", title: "Keamanan Terjamin", desc: "Sertifikasi kepatuhan privasi data" },
               ].map((item, i) => (
                 <div key={item.title} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
@@ -137,7 +137,7 @@ export default function Home() {
         {/* Mitra & Kolaborator */}
         <section className="w-full py-10 bg-white">
           <div className="w-full justify-center px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Dipercaya oleh Perusahaan dan Inovator Teknologi Terkemuka</p>
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6" data-aos="fade-up">Dipercaya oleh Perusahaan dan Inovator Teknologi Terkemuka</p>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-70">
               {[
                 { icon: "token", name: "VOLT DIGITAL" },
@@ -167,10 +167,10 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { icon: "devices", title: "Pengembangan Web &amp; Aplikasi Modern", desc: "Membangun antarmuka web responsif, aplikasi mobile Android &amp; iOS berkinerja mulus dengan pengalaman pengguna yang ramah dan intuitif.", tags: ["Next.js, React, &amp; Flutter", "Desain Ramah Semua Usia"] },
-                { icon: "cloud_sync", title: "Arsitektur Cloud &amp; DevOps", desc: "Infrastruktur awan otomatis, efisien biaya, dan berskala tinggi menggunakan Kubernetes, AWS, dan Google Cloud dengan waktu pemulihan instan.", tags: ["Otomasi CI/CD &amp; Docker", "Efisiensi Biaya Server hingga 40%"] },
+                { icon: "devices", title: "Pengembangan Web Aplikasi Modern", desc: "Membangun antarmuka web responsif, aplikasi mobile Android iOS berkinerja mulus dengan pengalaman pengguna yang ramah dan intuitif.", tags: ["Next.js, React, Flutter", "Desain Ramah Semua Usia"] },
+                { icon: "cloud_sync", title: "Arsitektur Cloud DevOps", desc: "Infrastruktur awan otomatis, efisien biaya, dan berskala tinggi menggunakan Kubernetes, AWS, dan Google Cloud dengan waktu pemulihan instan.", tags: ["Otomasi CI/CD Docker", "Efisiensi Biaya Server hingga 40%"] },
                 { icon: "psychology", title: "Integrasi Kecerdasan Buatan (AI)", desc: "Penerapan model bahasa cerdas (LLM), chatbot asisten pintar, otomasi dokumen, serta pemrosesan analitik prediktif untuk efisiensi tim Anda.", tags: ["Solusi AI Sesuai Kebutuhan Bisnis", "Otomasi Layanan Pelanggan Cerdas"] },
-                { icon: "verified_user", title: "Keamanan Sistem &amp; Pemeliharaan", desc: "Audit keamanan menyeluruh, proteksi celah kerentanan data, serta pemeliharaan berkala untuk menjaga stabilitas sistem tetap 100% prima.", tags: ["Audit Celah &amp; Enkripsi Data", "Pemantauan Proaktif 24 Jam"] },
+                { icon: "verified_user", title: "Keamanan Sistem Pemeliharaan", desc: "Audit keamanan menyeluruh, proteksi celah kerentanan data, serta pemeliharaan berkala untuk menjaga stabilitas sistem tetap 100% prima.", tags: ["Audit Celah Enkripsi Data", "Pemantauan Proaktif 24 Jam"] },
               ].map((service, i) => (
                 <div key={service.title} className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-sm hover:shadow-md hover:border-blue-300 transition-all flex flex-col justify-between group hover:-translate-y-1" data-aos="fade-up" data-aos-delay={i * 100}>
                   <div>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-7 md:mb-14">
               <div>
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Hasil Nyata</span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Studi Kasus &amp; Portofolio Unggulan</h2>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">Studi Kasus Portofolio Unggulan</h2>
                               <p className="text-slate-600 text-base sm:text-lg mt-2 max-w-xl">Lihat bagaimana kami mentransformasi sistem krusial klien menjadi solusi yang lebih cepat, aman, dan siap bertumbuh.</p>
               </div>
               <a href="/portfolio#studi-kasus" className="inline-flex items-center gap-2 font-bold text-blue-600 hover:text-blue-700 transition-colors mt-4 md:mt-0 text-sm">
@@ -212,7 +212,7 @@ export default function Home() {
               {[
                 {
                   image: "/images/beranda/1.jpg",
-                  tag: "Sektor Finansial &amp; Perbankan",
+                  tag: "Sektor Finansial Perbankan",
                   title: "Modernisasi Sistem Transaksi Real-Time untuk Layanan Finansial Nasional",
                   desc: "Kami merekayasa ulang sistem transaksi lama menjadi arsitektur microservices berbasis event-driven. Hasilnya, volume transaksi meningkat drastis tanpa risiko gangguan saat jam sibuk.",
                   metrics: [{ value: "+350%", label: "Kapasitas Proses" }, { value: "-60%", label: "Waktu Respons" }, { value: "0 Detik", label: "Downtime Migrasi" }],
@@ -289,7 +289,7 @@ export default function Home() {
                     <span className="w-2 h-2 rounded-full bg-emerald-400" />
                     Konsultasi Tersedia Minggu Ini
                   </div>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4">Siap Membangun Sistem Digital yang Andal &amp; Aman?</h2>
+                  <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-4">Siap Membangun Sistem Digital yang Andal Aman?</h2>
                   <p className="text-blue-100 text-base sm:text-lg leading-relaxed">Diskusikan kebutuhan proyek Anda langsung dengan arsitek perangkat lunak senior kami. Kami siap memberikan masukan arsitektur teknis secara gratis tanpa komitmen apa pun.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
