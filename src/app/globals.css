@@ -67,5 +67,5 @@ html.lenis, html.lenis body { height: auto; }
    jadi tanpa JS elemen tetap terlihat.
    Blok teks hero (elemen LCP) hanya digeser, tidak dibuat transparan: opacity 0
    menahan LCP sampai JS selesai (LCP 3,4 s -> 10,7 s). */
-.js-anim [data-hero="move"] { transform: translateY(24px); }
+.js-anim [data-word] { transform: translateY(110%); }
 .js-anim [data-hero="fade"] { opacity: 0; transform: translateY(24px); }

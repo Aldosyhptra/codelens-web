@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 import Icon from "@/components/Icon";
 import HeroAnimator from "@/components/HeroAnimator";
@@ -7,6 +8,18 @@ export const metadata = {
   description:
     "CodeLens mendampingi bisnis dalam merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi AI dengan jaminan keamanan dan kinerja tinggi.",
 };
+
+// Setiap kata hero dibungkus wadah overflow-hidden supaya GSAP bisa mengangkatnya
+// dari bawah (HeroAnimator). Tanpa opacity 0 — kata tetap terlihat saat paint pertama.
+function Word({ children }: { children: ReactNode }) {
+  return (
+    <span className="inline-flex overflow-hidden align-bottom pb-[0.12em] -mb-[0.12em]">
+      <span data-word className="inline-block">
+        {children}
+      </span>
+    </span>
+  );
+}
 
 export default function Home() {
   return (
@@ -18,13 +31,15 @@ export default function Home() {
           <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               {/* Teks Hero */}
-              <div className="lg:col-span-7 text-center lg:text-left" data-hero="move">
+              <div className="lg:col-span-7 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-6" >
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
                 </div>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
-                  Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> Skala Global
+                  <Word>Membangun</Word> <Word>Solusi</Word> <Word>Perangkat</Word>{" "}
+                  <Word>Lunak</Word> <Word><span className="text-blue-600">Terpercaya</span></Word>{" "}
+                  <Word>Skala</Word> <Word>Global</Word>
                 </h1>
                 <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.

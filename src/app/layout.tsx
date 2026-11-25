@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <script
                 dangerouslySetInnerHTML={{
                   __html:
-                    'if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js-anim")}',
+                    'if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js-anim");setTimeout(function(){if(!document.documentElement.dataset.hero)document.documentElement.classList.remove("js-anim")},3000)}',
                 }}
               />
               <SmoothScroll />
