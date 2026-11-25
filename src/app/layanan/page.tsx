@@ -1,6 +1,6 @@
 
 import Icon from "@/components/Icon";
-import TitleReveal from "@/components/TitleReveal";
+import { HeroTitle } from "@/components/HeroMotion";
 export const metadata = {
   title: "Layanan — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -19,9 +19,7 @@ export default function Layanan() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Mitra Teknologi Terpercaya &amp; Andal
             </div>
-            <TitleReveal className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
-              Layanan &amp; Solusi <span className="text-blue-600">Rekayasa Perangkat Lunak</span>
-            </TitleReveal>
+            <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]" text="Layanan & Solusi Rekayasa Perangkat Lunak" accent="Rekayasa Perangkat Lunak" />
             <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Kami merancang, membangun, dan mengoptimalkan sistem digital yang andal, aman, dan mudah digunakan untuk pertumbuhan bisnis Anda.
             </p>

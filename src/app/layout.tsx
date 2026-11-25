@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import AosInitializer from "@/components/AosInitializer";
-import SectionReveal from "@/components/SectionReveal";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -73,16 +72,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" dir="ltr" suppressHydrationWarning className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}>
+    <html lang="id" dir="ltr" className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}>
       <body className="min-h-screen bg-background text-on-surface antialiased">
-              <script
-                dangerouslySetInnerHTML={{
-                  __html:
-                    'if(!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("js-anim");setTimeout(function(){if(!document.documentElement.dataset.hero)document.documentElement.classList.remove("js-anim")},3000)}',
-                }}
-              />
               <SmoothScroll />
-              <SectionReveal />
               <AosInitializer />
               <Navbar />
               {children}

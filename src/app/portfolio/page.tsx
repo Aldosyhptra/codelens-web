@@ -5,7 +5,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 
 import Icon from "@/components/Icon";
-import TitleReveal from "@/components/TitleReveal";
+import { HeroTitle } from "@/components/HeroMotion";
 const caseStudies = [
   {
     id: "novaPay",
@@ -120,9 +120,7 @@ export default function PortfolioPage() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Rekam Jejak Solusi Nyata
             </div>
-            <TitleReveal className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
-              Portofolio &amp; Studi Kasus <span className="text-blue-600">Nyata</span>
-            </TitleReveal>
+            <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]" text="Portofolio & Studi Kasus Nyata" accent="Nyata" />
             <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Pelajari bagaimana kami membantu berbagai perusahaan menyelesaikan tantangan teknologi.
             </p>
