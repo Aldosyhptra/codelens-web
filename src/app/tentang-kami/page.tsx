@@ -13,7 +13,7 @@ export default function TentangKami() {
     <main className="w-full">
         {/* HERO SECTION */}
         <section className="relative w-full pt-16 pb-8 md:pt-24 md:pb-28 bg-[#F8FAFF] overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10" data-aos="fade-up">
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />

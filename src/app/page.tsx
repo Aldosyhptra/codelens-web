@@ -14,7 +14,7 @@ export default function Home() {
       <main className="grow">
         {/* Hero Section */}
         <section className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
-          <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
+          <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6" data-aos="fade-up">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               {/* Teks Hero */}
               <div className="lg:col-span-7 text-center lg:text-left">
