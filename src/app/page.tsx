@@ -1,25 +1,13 @@
 import Image from "next/image";
-import type { ReactNode } from "react";
 
 import Icon from "@/components/Icon";
 import HeroAnimator from "@/components/HeroAnimator";
+import TitleReveal from "@/components/TitleReveal";
 export const metadata = {
   title: "Beranda — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
     "CodeLens mendampingi bisnis dalam merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi AI dengan jaminan keamanan dan kinerja tinggi.",
 };
-
-// Setiap kata hero dibungkus wadah overflow-hidden supaya GSAP bisa mengangkatnya
-// dari bawah (HeroAnimator). Tanpa opacity 0 — kata tetap terlihat saat paint pertama.
-function Word({ children }: { children: ReactNode }) {
-  return (
-    <span className="inline-flex overflow-hidden align-bottom pb-[0.12em] -mb-[0.12em]">
-      <span data-word className="inline-block">
-        {children}
-      </span>
-    </span>
-  );
-}
 
 export default function Home() {
   return (
@@ -36,11 +24,9 @@ export default function Home() {
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
                 </div>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
-                  <Word>Membangun</Word> <Word>Solusi</Word> <Word>Perangkat</Word>{" "}
-                  <Word>Lunak</Word> <Word><span className="text-blue-600">Terpercaya</span></Word>{" "}
-                  <Word>Skala</Word> <Word>Global</Word>
-                </h1>
+                <TitleReveal className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
+                  Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> Skala Global
+                </TitleReveal>
                 <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.
                 </p>

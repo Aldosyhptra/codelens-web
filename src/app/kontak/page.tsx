@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 import Icon from "@/components/Icon";
+import TitleReveal from "@/components/TitleReveal";
 export default function KontakPage() {
   const [selectedProject, setSelectedProject] = useState<string>("app");
   const [selectedDuration, setSelectedDuration] = useState<string>("standar");
@@ -32,9 +33,9 @@ const durations = [
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Respon Cepat Dalam 24 Jam
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight text-center max-w-3xl">
+            <TitleReveal className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight text-center max-w-3xl">
               Mari Diskusikan Ide &amp; <span className="text-blue-600">Kebutuhan Proyek</span> Anda
-            </h1>
+            </TitleReveal>
             <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed text-center max-w-2xl">
               Apakah Anda memiliki pertanyaan atau ingin estimasi awal? Tim konsultan kami siap membantu memberikan solusi terbaik secara gratis dan tanpa ikatan.
             </p>
