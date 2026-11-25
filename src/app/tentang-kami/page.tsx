@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Icon from "@/components/Icon";
+import { HeroTitle } from "@/components/HeroMotion";
 export const metadata = {
   title: "Tentang Kami — CodeLens: Dedikasi & Integritas Sejak 2018",
   description:
@@ -12,7 +13,7 @@ export default function TentangKami() {
     <main className="w-full">
         {/* HERO SECTION */}
         <section className="relative w-full pt-16 pb-8 md:pt-24 md:pb-28 bg-[#F8FAFF] overflow-hidden">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10" data-aos="fade-up">
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
@@ -20,10 +21,7 @@ export default function TentangKami() {
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 <div className="lg:col-span-6">
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                    Tentang CodeLens — <br />
-                    <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-700 via-blue-600 to-sky-600">Membangun Teknologi dengan Hati &amp; Presisi.</span>
-                  </h1>
+                  <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight" text="Tentang CodeLens — Membangun Teknologi dengan Hati & Presisi." accent="Membangun Teknologi dengan Hati & Presisi." accentClass="text-transparent bg-clip-text bg-linear-to-r from-blue-700 via-blue-600 to-sky-600" />
                   <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl">
                     Didirikan oleh para praktisi teknologi berpengalaman dengan komitmen menghadirkan perangkat lunak berkualitas tinggi, aman, dan mudah digunakan oleh siapa saja.
                   </p>

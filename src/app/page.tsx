@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Icon from "@/components/Icon";
+import { HeroBlock, HeroTitle } from "@/components/HeroMotion";
 export const metadata = {
   title: "Beranda — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -13,17 +14,15 @@ export default function Home() {
       <main className="grow">
         {/* Hero Section */}
         <section className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
-          <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
+          <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6" data-aos="fade-up">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               {/* Teks Hero */}
-              <div className="lg:col-span-7 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+              <div className="lg:col-span-7 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-6" >
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
                 </div>
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4">
-                  Membangun Solusi Perangkat Lunak <span className="text-blue-600">Terpercaya</span> Skala Global
-                </h1>
+                <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-4" text="Membangun Solusi Perangkat Lunak Terpercaya Skala Global" accent="Terpercaya" />
                 <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
                   Kami mendampingi bisnis dan perusahaan Anda merancang, membangun, dan mengembangkan perangkat lunak modern, sistem cloud tangguh, serta solusi kecerdasan buatan (AI) dengan jaminan keamanan dan kinerja tinggi.
                 </p>
@@ -53,7 +52,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <HeroBlock className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100">
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
@@ -106,7 +105,7 @@ export default function Home() {
                     </span>
                     <span className="font-medium text-slate-700">Audit Arsitektur Lengkap</span>
                   </div>
-                </div>
+                </HeroBlock>
               </div>
             </div>
           </div>

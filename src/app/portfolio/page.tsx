@@ -5,6 +5,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 
 import Icon from "@/components/Icon";
+import { HeroTitle } from "@/components/HeroMotion";
 const caseStudies = [
   {
     id: "novaPay",
@@ -111,7 +112,7 @@ export default function PortfolioPage() {
 
   return (
     <div className="flex flex-col flex-1 items-center font-sans text-on-surface bg-[#F8FAFC] w-full overflow-x-hidden">
-      <section className="relative w-full py-8 md:pt-14 md:pb-10 bg-[#F8FAFC] overflow-hidden">
+      <section className="relative w-full py-8 md:pt-14 md:pb-10 bg-[#F8FAFC] overflow-hidden" data-aos="fade-up">
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-blue-100/40 blur-3xl rounded-full pointer-events-none -z-10" />
         <div className="w-full px-4 md:px-8 lg:px-16 flex flex-col items-center">
           <div className="w-full max-w-5xl">
@@ -119,9 +120,7 @@ export default function PortfolioPage() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Rekam Jejak Solusi Nyata
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
-              Portofolio &amp; Studi Kasus <span className="text-blue-600">Nyata</span>
-            </h1>
+            <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]" text="Portofolio & Studi Kasus Nyata" accent="Nyata" />
             <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Pelajari bagaimana kami membantu berbagai perusahaan menyelesaikan tantangan teknologi.
             </p>
@@ -145,7 +144,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="w-full py-4">
+      <section className="w-full py-4" data-aos="fade-up">
         <div className="w-full px-4 md:px-8 lg:px-16 flex justify-center">
           <div className="w-full md:w-md flex flex-wrap justify-center items-center gap-2 p-1.5 bg-slate-100/90 rounded-2xl border border-slate-200/80" id="filter-container">
             {filterCategories.map((cat) => {

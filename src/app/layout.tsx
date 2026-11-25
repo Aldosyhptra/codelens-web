@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import AosInitializer from "@/components/AosInitializer";
+import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="id" dir="ltr" className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}>
       <body className="min-h-screen bg-background text-on-surface antialiased">
+              <SmoothScroll />
               <AosInitializer />
               <Navbar />
               {children}

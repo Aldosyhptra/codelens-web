@@ -1,5 +1,6 @@
 
 import Icon from "@/components/Icon";
+import { HeroTitle } from "@/components/HeroMotion";
 export const metadata = {
   title: "Layanan — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -13,14 +14,12 @@ export default function Layanan() {
         {/* HERO SECTION */}
         <section className="relative pt-16 pb-8 md:pt-24 md:pb-28 bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
           <div className="absolute top-10 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-blue-100/40 blur-3xl rounded-full pointer-events-none -z-10" />
-          <div className="w-full px-4 md:px-8 flex flex-col items-center">
+          <div className="w-full px-4 md:px-8 flex flex-col items-center" data-aos="fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase shadow-sm mb-6">
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               Mitra Teknologi Terpercaya &amp; Andal
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]">
-              Layanan &amp; Solusi <span className="text-blue-600">Rekayasa Perangkat Lunak</span>
-            </h1>
+            <HeroTitle className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight max-w-4xl leading-[1.2]" text="Layanan & Solusi Rekayasa Perangkat Lunak" accent="Rekayasa Perangkat Lunak" />
             <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
               Kami merancang, membangun, dan mengoptimalkan sistem digital yang andal, aman, dan mudah digunakan untuk pertumbuhan bisnis Anda.
             </p>
