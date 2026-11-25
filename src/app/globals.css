@@ -55,3 +55,17 @@ body {
 ::-webkit-scrollbar { display: none; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: transparent; }
+
+/* Lenis smooth scroll — dipakai src/components/SmoothScroll.tsx */
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* Keadaan awal hero beranda sebelum timeline GSAP jalan. Kelas .js-anim hanya
+   dipasang skrip inline di layout saat JS aktif dan reduced motion tidak aktif,
+   jadi tanpa JS elemen tetap terlihat.
+   Blok teks hero (elemen LCP) hanya digeser, tidak dibuat transparan: opacity 0
+   menahan LCP sampai JS selesai (LCP 3,4 s -> 10,7 s). */
+.js-anim [data-hero="move"] { transform: translateY(24px); }
+.js-anim [data-hero="fade"] { opacity: 0; transform: translateY(24px); }

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { getCachedImageSrc } from "@/lib/imageCache";
 import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Icon from "./Icon";
 const logoSrc = getCachedImageSrc("/images/logo/logo2.png") || "/images/logo/logo2.png";
@@ -130,62 +131,78 @@ export default function Navbar() {
         </div>
       </header>
 
-      <div
-        className={`fixed inset-0 z-50 bg-white flex flex-col lg:hidden transition-all duration-500 ease-in-out ${
-          menuOpen ? "opacity-100 visible translate-y-0 pointer-events-auto" : "opacity-0 invisible -translate-y-full pointer-events-none"
-        }`}
-      >
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 transition-opacity duration-300 ease-in-out delay-100">
-          <Link href="/" onClick={() => { closeMenu(); }} className="flex items-center gap-3 shrink-0">
-            <Image
-              src={logoSrc}
-              alt="CodeLens"
-              className="h-15 w-auto object-contain"
-              width={100}
-              height={100}
-            />
-          </Link>
-          <button
-            onClick={() => { closeMenu(); }}
-            className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors"
-            aria-label="Close menu"
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            key="menu-mobile"
+            initial={{ opacity: 0, y: -24 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -24 }}
+            transition={{ duration: 0.28, ease: "easeOut" }}
+            className="fixed inset-0 z-50 bg-white flex flex-col lg:hidden"
           >
-            <Icon name="close" className="text-slate-700 text-xl" />
-          </button>
-        </div>
-
-        <nav className="flex flex-col gap-1 px-6 py-6 border-b border-slate-100 transition-opacity duration-500 ease-in-out delay-200">
-          {navLinks.map((link, index) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => { closeMenu(); }}
-                className={`block py-4 text-base font-semibold transition-colors border-b border-slate-50 last:border-0 cursor-pointer ${
-                  isActive
-                    ? "text-blue-600"
-                    : "text-slate-700 hover:text-blue-600"
-                }`}
-                style={{ opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(12px)", transition: `opacity 0.3s ease ${0.15 + index * 0.06}s, transform 0.3s ease ${0.15 + index * 0.06}s` }}
-              >
-                {link.label}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+              <Link href="/" onClick={() => { closeMenu(); }} className="flex items-center gap-3 shrink-0">
+                <Image
+                  src={logoSrc}
+                  alt="CodeLens"
+                  className="h-15 w-auto object-contain"
+                  width={100}
+                  height={100}
+                />
               </Link>
-            );
-          })}
-        </nav>
+              <button
+                onClick={() => { closeMenu(); }}
+                className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors"
+                aria-label="Close menu"
+              >
+                <Icon name="close" className="text-slate-700 text-xl" />
+              </button>
+            </div>
 
-        <div className="mt-auto px-6 pb-8 transition-opacity duration-500 ease-in-out delay-300">
-          <Link
-            href="/kontak#jadwal-cto"
-            onClick={() => { closeMenu(); }}
-            className="block w-full text-center px-5 py-4 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 shadow-lg shadow-blue-600/25 transition-all"
-            style={{ opacity: menuOpen ? 1 : 0, transform: menuOpen ? "translateY(0)" : "translateY(12px)", transition: `opacity 0.3s ease 0.4s, transform 0.3s ease 0.4s` }}
-          >
-            Jadwalkan Konsultasi
-          </Link>
-        </div>
-      </div>
+            <nav className="flex flex-col gap-1 px-6 py-6 border-b border-slate-100">
+              {navLinks.map((link, index) => {
+                const isActive = pathname === link.href;
+                return (
+                  <motion.div
+                    key={link.label}
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: "easeOut", delay: 0.12 + index * 0.05 }}
+                  >
+                    <Link
+                      href={link.href}
+                      onClick={() => { closeMenu(); }}
+                      className={`block py-4 text-base font-semibold transition-colors border-b border-slate-50 last:border-0 cursor-pointer ${
+                        isActive
+                          ? "text-blue-600"
+                          : "text-slate-700 hover:text-blue-600"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                );
+              })}
+            </nav>
+
+            <motion.div
+              className="mt-auto px-6 pb-8"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, ease: "easeOut", delay: 0.4 }}
+            >
+              <Link
+                href="/kontak#jadwal-cto"
+                onClick={() => { closeMenu(); }}
+                className="block w-full text-center px-5 py-4 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 shadow-lg shadow-blue-600/25 transition-all"
+              >
+                Jadwalkan Konsultasi
+              </Link>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

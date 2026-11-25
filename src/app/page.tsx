@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Icon from "@/components/Icon";
+import HeroAnimator from "@/components/HeroAnimator";
 export const metadata = {
   title: "Beranda — CodeLens: Solusi Rekayasa Perangkat Lunak Terpercaya",
   description:
@@ -12,11 +13,12 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-surface font-sans text-on-surface">
       <main className="grow">
         {/* Hero Section */}
-        <section className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
+        <section data-hero-root className="relative w-full flex flex-col lg:min-h-[calc(100vh-5rem)] bg-linear-to-b from-[#F8FAFC] via-white to-white overflow-hidden">
+          <HeroAnimator />
           <div className="w-full my-auto flex justify-center p-4 sm:p-5 lg:p-6">
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
               {/* Teks Hero */}
-              <div className="lg:col-span-7 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+              <div className="lg:col-span-7 text-center lg:text-left" data-hero="move">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 text-blue-700 text-xs font-semibold uppercase tracking-wide mb-6" >
                   <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
                   Mitra Rekayasa Perangkat Lunak Terpercaya
@@ -53,7 +55,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <div className="relative bg-white rounded-3xl p-6 shadow-xl border border-slate-100" data-hero="fade">
                   <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
